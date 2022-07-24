@@ -1,0 +1,23 @@
+git branch 
+
+---------------------------------
+-- Fast Forward 
+git branch frontend
+git checkout frontend 
+cat >> data.txt
+git add .
+git commit -m "frontend data"
+git push -u origin frontend
+
+git checkout main
+git merge frontend (fast forward)
+
+---------------------------------
+git checkout -b backend
+cat >> data.txt
+git add .
+git commit -m "backend data"
+git push -u origin backend
+
+git checkout main
+git merge --no-ff frontend (no-fast forward)

@@ -1,0 +1,2 @@
+git config --global alias.m44 "log --all --graph --decorate --oneline"
+git m44

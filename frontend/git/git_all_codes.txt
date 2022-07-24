@@ -1,0 +1,28 @@
+git --version
+git -v
+clear
+cat >> dosyaAdi.txt
+
+#########################################################################
+git status
+git log
+git add .
+git commit -m "mesaj adı"
+git push
+
+git commit -m "commit"
+git push 
+
+#commit ve push 
+git commit -a -m "commit ve push aynı anda yapar"
+
+#commit mesajını ismini değiştirmek istiyorsak
+git commit --amend -m "mesaj commitin yeni adı"
+
+# clone 
+git clone https://github.com/hamitmizrak/ecodation_git_tutorials
+
+#########################################################################
+# bazen kodlarımızı add yaparız sonrasında acil bir iş gelir bu yazdıklarımızı commitlemek istemeyiz bu durumda
+stash yaparız (stash=Araf)
+

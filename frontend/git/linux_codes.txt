@@ -1,0 +1,2 @@
+clear
+cat >> [D[C[C[C[C[C[C[C[deneme.txt
