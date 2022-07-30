@@ -74,8 +74,8 @@
                 </tr>
 
                 <tr>
-                    <td><i class="fa-solid fa-cake-candles"></i> Age:</td>
-                    <td><input type="number" name="age" id="age" required size="80" min="18" max="55" value="18"  /></td>
+                    <td><i class="fa-brands fa-pagelines"></i>Age:</td>
+                    <td><input type="number" name="age" id="age" required size="80" min="18" step="2" max="55" value="18"  /></td>
                 </tr>
 
                 <tr>
@@ -113,8 +113,26 @@
                 </tr>
 
                 <tr>
+                    <td><i class="fa-solid fa-flag-usa"></i> Country Code:</td>
+                    <td>
+                        <input type="text" id="country_code" name="country_code"
+                        placeholder="küçük veya büyük harflerde 3 tane olacak"
+  pattern="[A-Za-z]{3}" title="3 karakterli olsun" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa-solid fa-phone"></i> Telephone Number </td>
+                    <td>
+                        <input type="tel" id="phone" name="phone"
+  placeholder="123-45-678"
+  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                    </td>
+                </tr>
+
+                <tr>
                     <td><i class="fa-solid fa-toggle-off"></i> actions:</td>
-                    <td><input type="reset" name="reset" id="reset" value="CLEAR" /><button type="submit" name="submit"
+                    <td><input type="reset" name="reset" id="reset" value="CLEAR" /><button type="submit" name="submit" formtarget="_blank"
                             id="submit"> SUBMIT </button></td>
                 </tr>
             </tbody>
