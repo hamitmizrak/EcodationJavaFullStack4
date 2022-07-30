@@ -55,22 +55,27 @@
                 <tr>
                     <td><i class="fa-solid fa-people-group"></i> Adı:</td>
                     <td><input type="text" name="name" id="name" required
-                            placeholder="Lütfen adınızı girmeyi unutmayız veri giriniz..." autofocus /></td>
+                            placeholder="Lütfen adınızı girmeyi unutmayız veri giriniz..." autofocus size="80" /></td>
                 </tr>
                 <tr>
                     <td><i class="fa-solid fa-people-group"></i> Soyadı:</td>
-                    <td><input type="text" name="surname" id="surname" required
-                            placeholder="Lütfen soyadı giriniz..." /></td>
+                    <td><input type="text" name="surname" id="surname" required disabled 
+                            placeholder="disabled soyadı giriniz..." size="80"/></td>
                 </tr>
                 <tr>
                     <td><i class="fa-solid fa-at"></i> Email:</td>
-                    <td><input type="email" name="email" id="email" required placeholder="Lütfen emaili giriniz..." />
+                    <td><input type="email" name="email" id="email" required placeholder="readonly emaili giriniz ..." readonly size="80"/>
                     </td>
                 </tr>
                 <tr>
                     <td><i class="fa-solid fa-key"></i> Password:</td>
                     <td><input type="password" name="password" id="password" required
-                            placeholder="Lütfen şifreyi giriniz..." /></td>
+                            placeholder="Lütfen şifreyi giriniz..." size="80"/></td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa-solid fa-cake-candles"></i> Age:</td>
+                    <td><input type="number" name="age" id="age" required size="80" min="18" max="55" value="18"  /></td>
                 </tr>
 
                 <tr>
@@ -93,7 +98,6 @@
                         <input type="checkbox" name="bs" id="bs" value="bs">bootstrap
                     </td>
                 </tr>
-
 
                 <tr>
                     <td><i class="fa-solid fa-flag-usa"></i> Country:</td>
