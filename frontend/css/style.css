@@ -169,3 +169,24 @@ date: 31 Temmuz 2022
     clear: both;
     display: block;
 }
+a {
+    text-decoration: none;
+    background-color: chocolate;
+    color: aliceblue;
+    padding: 2px 4px;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    display: inline-block;
+    border-radius: 1%;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+a:visited{
+    background-color: blue;
+    color: yellow;
+}
+
