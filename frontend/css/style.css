@@ -222,5 +222,13 @@ header{
     height: 75vh; /*view port:tarayıcının görebildiği alan demektir*/
     height:200px;
     width: 100%;
+    /*
+    clip-path : resimi,kesmek,parçalamak
+    0 0       : başlama noktası
+    100% 0    : x 100% uzak y=0, 
+    100% 100% : x 100% uzak y 100% uzak
+    0 80%     : x 0 uzak y 80% uzak
+    */
+    clip-path: polygon(0 0, 100% 0, 100% 100%,0 80%);
 }
 
