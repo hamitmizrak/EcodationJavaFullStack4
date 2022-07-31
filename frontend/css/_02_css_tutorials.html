@@ -14,6 +14,51 @@
 <body class="bg-dark text-white m-5">
 <!-- start codes -->
 
+
+<ul>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+</ul>
+
+<style>
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    color:red;
+    display:inline-block;
+    background-color: black;
+    padding:0 4px;
+    margin:1px;
+}
+li:hover{
+    color:black;
+    background-color: red;
+    cursor: pointer;
+}
+/*odd: tek olan*/
+ul >li:nth-of-type(odd){
+    color:blue;
+}
+/*even:çift olan*/
+ul>li:nth-of-type(even){
+    color:purple;
+}
+
+ul li:first-child{
+    background-color: dodgerblue;
+}
+
+ul li:last-child{
+    background-color: brown;
+}
+
+</style>
+
+
 <!-- 
 Selector:Seçiciler
 1-)Group Selector 
@@ -48,19 +93,21 @@ div~p{
     margin-top:5px;
 }
 */
-div+p{
+div~p{
     border:2px solid blue;
     margin-top:5px;
 }
 </style>
-<div>sadece div-1</div>
+
+
+<!-- <div>sadece div-1</div>
 <div>sadece div-2</div>
 <p>paragraf-1</p>
 <div>
     <p>paragraf-2</p>
     <p>paragraf-3</p>
 </div>
-<p>paragraf-4</p>
+<p>paragraf-4</p> -->
 
 <!-- <a href="#">Click 1</a>
 <a href="#">Click 1</a>

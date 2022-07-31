@@ -201,4 +201,11 @@ div~p ==> div ile p aynı seviyede olacak Tüm p'ler  seç
 div+p ==>div ile p aynı seviyede olacak sadece 1 tane p seç 
 */
 
+*{
+    box-sizing:content-box;/* default */
+    box-sizing:border-box; /* width=width+padding+border */
+    box-sizing:border-box; /* height=height+padding+border */
+    margin:0;
+    padding:0px;
+}
 
