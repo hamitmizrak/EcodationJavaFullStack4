@@ -4,19 +4,65 @@ date: 31 Temmuz 2022
 */
 
 
-#paragraf_id{
+#paragraf_id {
     /*
     bilgisayarda RGB:Red Green Blue
     00:Siyah   ff:beyaz
     */
     /* background-color */
     background-color: red;
-    background-color: #523; /*RGB */
-    background-color: #123456; /*RGB ancak daha hassas*/
-    background-color: rgb(0,100,255); /* 0<=X<=255*/
-    background-color: rgba(0,100,255,0.8); /*0<=a<=1 0<=X<=255*/
-    background-color: rgba(0,100,255,.8); /*0<=a<=1 0<=X<=255*/
+    background-color: #523;
+    /*RGB */
+    background-color: #123456;
+    /*RGB ancak daha hassas*/
+    background-color: rgb(0, 100, 255);
+    /* 0<=X<=255*/
+    background-color: rgba(0, 100, 255, 0.8);
+    /*0<=a<=1 0<=X<=255*/
+    background-color: rgba(0, 100, 255, .8);
+    /*0<=a<=1 0<=X<=255*/
 
     /*color */
-    color:white;
+    color: white;
+
+    /*
+    margin:dış boşluk
+    Saat dönme yönünde devame eder.
+    */
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+    margin-left: 15.5px;
+
+    /* kısaltılmış hali*/
+    margin: 10px 15px 25px 15.5px;
+
+    /*yukardan-sağdan-aşağıdan-soldan 10 px*/
+     margin:10px;
+
+    /*
+    15px: yukarıdan-aşağıdan 
+    12px:sağdan-solda */
+    margin:15px 12px; 
+
+
+        /*
+    padding:iç boşluk
+    Saat dönme yönünde devame eder.
+    */
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    padding-left: 15.5px;
+
+    /* kısaltılmış hali*/
+    padding: 10px 15px 25px 15.5px;
+
+    /*yukardan-sağdan-aşağıdan-soldan 10 px*/
+    padding:10px;
+
+    /*
+    15px: yukarıdan-aşağıdan 
+    12px:sağdan-solda */
+    padding:15px 12px; 
 }
