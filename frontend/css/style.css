@@ -1,1 +1,22 @@
-/*aasd*/
+/*
+author: Hamit Mızrak
+date: 31 Temmuz 2022 
+*/
+
+
+#paragraf_id{
+    /*
+    bilgisayarda RGB:Red Green Blue
+    00:Siyah   ff:beyaz
+    */
+    /* background-color */
+    background-color: red;
+    background-color: #523; /*RGB */
+    background-color: #123456; /*RGB ancak daha hassas*/
+    background-color: rgb(0,100,255); /* 0<=X<=255*/
+    background-color: rgba(0,100,255,0.8); /*0<=a<=1 0<=X<=255*/
+    background-color: rgba(0,100,255,.8); /*0<=a<=1 0<=X<=255*/
+
+    /*color */
+    color:white;
+}
