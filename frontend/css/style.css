@@ -201,11 +201,26 @@ div~p ==> div ile p aynı seviyede olacak Tüm p'ler  seç
 div+p ==>div ile p aynı seviyede olacak sadece 1 tane p seç 
 */
 
+/* responsive img*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 *{
     box-sizing:content-box;/* default */
     box-sizing:border-box; /* width=width+padding+border */
     box-sizing:border-box; /* height=height+padding+border */
     margin:0;
     padding:0px;
+}
+
+header{
+    background-image: url('../images/house-g76e061a59_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 75vh; /*view port:tarayıcının görebildiği alan demektir*/
+    height:200px;
+    width: 100%;
 }
 
