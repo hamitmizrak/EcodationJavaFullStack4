@@ -85,4 +85,41 @@ date: 31 Temmuz 2022
      /*4 özelliği tek satırda göstermek*/
      border-radius:.8%;
 
+     /*font*/
+     font-size: 22px;
+     font-size:x-large;
+     font-weight: 100;
+     font-style:italic;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+     /* text:metin*/
+     text-align: left;
+     text-align: right;
+     text-align:center;
+     text-align:justify;
+
+     text-transform: lowercase;
+     text-transform: uppercase;
+     text-transform: capitalize;
+
+     text-decoration: line-through;
+     text-decoration: underline;
+     text-decoration: overline;
+     text-decoration: none;
+
+     text-indent: 10px;
+     word-spacing: 5px;
+     letter-spacing: 1px;
+     line-height: 30px;
+
+     /* 
+     1px: X düzlenminde +1px: Sağa doğru -1px:Sola doğru
+     8px: Y  düzlenminde +8px: Aşağı doğru -8px:Yukarı doğru
+     */
+     text-shadow: 1px -8px rgba(255,255,255,.5);
+
+}
+
+#specialLetter{
+    text-transform: uppercase;
 }
