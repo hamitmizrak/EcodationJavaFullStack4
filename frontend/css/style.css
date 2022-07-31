@@ -65,4 +65,24 @@ date: 31 Temmuz 2022
     15px: yukarıdan-aşağıdan 
     12px:sağdan-solda */
     padding:15px 12px; 
+
+
+    /* border: çerceve */ 
+     border-width: 1px;
+     border-style: dotted;
+     border-color: orange;
+
+     /*3 özelliği tek satırda göstermek*/
+     border:1px solid orange;
+
+     /*border-radius:AÇI*/
+     /* border-radius: 50%; */
+     border-top-left-radius: 50%;
+     border-top-right-radius: 50%;
+     border-bottom-right-radius:50%;
+     border-bottom-left-radius:50%;
+     
+     /*4 özelliği tek satırda göstermek*/
+     border-radius:50%;
+
 }
