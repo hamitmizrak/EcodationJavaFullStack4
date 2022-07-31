@@ -222,7 +222,7 @@ header{
     height: 75vh; /*view port:tarayıcının görebildiği alan demektir*/
     height:200px;
     width: 100%;
-    
+
     /*
     clip-path : resimi,kesmek,parçalamak
     0 0       : başlama noktası
@@ -232,6 +232,7 @@ header{
     */
     clip-path: polygon(0 0, 100% 0, 100% 100%,0 80%);
 
+    /* https://cssgradient.io/ */
     /* linear-gradient:yavaş yavaş renk değiştirmek */
     /*yukarıdan aşağıya doğru*/
     background-image: linear-gradient(red, yellow, blue);
@@ -240,3 +241,8 @@ header{
     background-image: linear-gradient(to bottom right, red , blue);
 }
 
+footer{
+  min-height: 20rem;
+  width: auto;
+  background-color: black;  
+}
