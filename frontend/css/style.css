@@ -116,10 +116,56 @@ date: 31 Temmuz 2022
      1px: X düzlenminde +1px: Sağa doğru -1px:Sola doğru
      8px: Y  düzlenminde +8px: Aşağı doğru -8px:Yukarı doğru
      */
-     text-shadow: 1px -8px rgba(255,255,255,.5);
+     text-shadow: 1px 1px rgba(255,255,255,.5);
 
+     /*
+     -webkit:safari,opera,chrome
+     -moz: mozilla
+     */
+     column-count: 2;
+     -webkit-column-count:2;
+     -moz-column-count:2;
+
+     column-rule:2px solid red;
+     -webkit-column-rule:2px solid red;
+     -moz-column-rule:2px solid red;
+}
+
+.click_css{
+    /*display: aynı satırda veya alt satırda göstermek için kullanırız.*/
+    display: inline; /*satır width-height çalışmayacak*/
+    display: block; /*alt satır*/
+    display: inline-block; /*width-height kullanmak istiyorsak*/
+    display:none;
+
+    visibility: hidden;
+    visibility: none;
 }
 
 #specialLetter{
     text-transform: uppercase;
+}
+
+.div_class{
+    background-color: red;
+    color:blue;
+
+    display: inline-block;
+
+    width: 25%;
+    min-width:150px; /*min:150px ve yukarısı*/
+    max-width:150px; /* max:150px en fazla 150px kadar olabilir. */
+
+    height:150px;
+    min-height:150px; /*min:150px ve yukarısı*/
+    max-height:150px; /* max:150px en fazla 150px kadar olabilir. */
+
+    float:right;
+    margin-left:1%;
+}
+
+.clearfix_data:before{
+    content: "";
+    clear: both;
+    display: block;
 }
