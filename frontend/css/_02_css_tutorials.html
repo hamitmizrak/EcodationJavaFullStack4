@@ -14,9 +14,57 @@
 <body class="bg-dark text-white m-5">
 <!-- start codes -->
 
+<!-- 
+Selector:Seçiciler
+1-)Group Selector 
+
+
+-->
+<!-- 
+    Group Selector 
+* ==> bütün tagler seç
+p ==> tüm p seç
+div,p ==> tüm div'ler ve tüm p seç
+div>p ==> parent'i div olacak bütün p olan child olan p'ler seç
+div~p ==> div ile p aynı seviyede olacak Tüm p'ler  seç
+div+p ==>div ile p aynı seviyede olacak sadece 1 tane p seç 
+-->
+<style>
+/* 
+div,p{
+    border:2px solid blue;
+    margin-top:5px;
+} 
+
+
+div>p{
+    border:2px solid blue;
+    margin-top:5px;
+}
+
+
+div~p{
+    border:2px solid blue;
+    margin-top:5px;
+}
+*/
+div+p{
+    border:2px solid blue;
+    margin-top:5px;
+}
+</style>
+<div>sadece div-1</div>
+<div>sadece div-2</div>
+<p>paragraf-1</p>
+<div>
+    <p>paragraf-2</p>
+    <p>paragraf-3</p>
+</div>
+<p>paragraf-4</p>
+
+<!-- <a href="#">Click 1</a>
 <a href="#">Click 1</a>
-<a href="#">Click 1</a>
-<a href="#">Click 1</a>
+<a href="#">Click 1</a> -->
 
 <!-- <div class="div_class">1</div>
 <div class="div_class">2</div>

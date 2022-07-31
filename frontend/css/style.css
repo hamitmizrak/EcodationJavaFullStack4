@@ -190,3 +190,15 @@ a:visited{
     color: yellow;
 }
 
+/*selector*/
+/* 
+Group Selector 
+* ==> bütün tagler seç
+p ==> tüm p seç
+div,p ==> tüm div'ler ve tüm p seç
+div>p ==> parent'i div olacak bütün child olan p'ler seç
+div~p ==> div ile p aynı seviyede olacak Tüm p'ler  seç
+div+p ==>div ile p aynı seviyede olacak sadece 1 tane p seç 
+*/
+
+
