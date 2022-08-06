@@ -1,5 +1,7 @@
 ![](https://komarev.com/ghpvc/?username=hamitmizrak)
 
+![readme](./picture/readme.jpg)
+
 # Ecodation Java Full Stack Developer -2 (19 Haziran  2022)
 * [GitHub](https://github.com/hamitmizrak/EcodationBlogProject2)
 * 
