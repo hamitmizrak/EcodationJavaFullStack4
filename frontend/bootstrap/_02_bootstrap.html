@@ -38,9 +38,109 @@
 
 <body class="bg-dark text-warning container ">
     <!-- start codes -->
+
    
-   <!-- bs5: list-group   -->
-   <!-- css: list-style-type:none -->
+    <div class="border border-warning p-5">
+    <form action="#!" method="post" target="_blank">
+        <div class="container">
+            <h1 class="h1 text-uppercase text-center">Form</h1>
+            <!--row -1 -->
+            <div class="row">
+                <div class="form-group col-8">
+                     <!-- for id ile eşleşir -->
+                    <label for="email_id">Email</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="email_id" placeholder="Username" aria-describedby="inputGroupPrepend" autofocus required >
+                        <div class="invalid-feedback">
+                          Please choose a username.
+                        </div>
+                      </div>
+                  
+                </div>
+                <div class="form-group col">
+                    <label for="password_id">Password</label>
+                    <input type="password" class="form-control" id="password_id" required placeholder="lütfen doldurunuz"/>
+                </div>
+            </div>
+            <!--row -1 -->
+            <div class="row mt-3">
+                <div class="form-group col">
+                    <!-- for id ile eşleşir -->
+                    <label for="city_id">City</label>
+                    <input type="text" class="form-control" id="city_id" required placeholder="lütfen doldurunuz" value="defaultta gelen"/>
+                </div>
+                <div class="form-group col">
+                    <label for="state_id">State</label>
+                    <input type="text" class="form-control" id="state_id" required placeholder="lütfen doldurunuz"/>
+                </div>
+                <div class="form-group col">
+                    <label for="zip_id">Zip</label>
+                    <input type="text" class="form-control" id="zip_id" required placeholder="lütfen doldurunuz"/>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="form-group col-2">
+                </div>
+                <div class="form-group col">
+                    <input type="reset" class="form-control btn btn-danger" />
+                </div>
+                <div class="form-group col">
+                    <input type="submit" class="form-control btn btn-primary" />
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+    <hr />
+    <table class="table table-hover table-striped table-primary table-md table-responsive">
+        <thead>
+            <tr class="text-primary">
+                <th>FrontEnd</th>
+                <th>BackEnd</th>
+                <th>Api</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>item 1</td>
+                <td>item 2</td>
+                <td>item 3</td>
+            </tr>
+            <tr>
+                <td>item 1</td>
+                <td>item 2</td>
+                <td>item 3</td>
+            </tr>
+            <tr>
+                <td>item 1</td>
+                <td>item 2</td>
+                <td>item 3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr />
+    <!-- normal alert -->
+    <div class="alert alert-danger">
+        <strong>Merhabalar Güzel İnsanlar</strong>
+    </div>
+
+    <!-- kapanabilen alert -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    </div>
+
+
+    <hr />
+    list
+    <!-- bs5: list-group   -->
+    <!-- css: list-style-type:none -->
     <ul class="list-group mt-5 d-grid gap-2">
         <li class="list-group-item bg-danger">item 1</li>
         <li class="list-group-item bg-primary">item 2</li>
@@ -48,7 +148,7 @@
         <li class="list-group-item bg-warning disabled">item 4</li>
     </ul>
 
-    <hr/>
+    <hr />
 
 
     <!-- end codes -->
