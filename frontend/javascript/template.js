@@ -208,52 +208,56 @@
 // s6-) Bu sayılardan en küçüğü alt taban en büyüğü üst taban şeklinde üstünü alalım
 
 ///////////////////////////////////////
-//SAYILAR 
-let sayi1;
+//SAYILAR
+// let sayi1;
 
-//Tam sayı
-sayi1=55;
-console.log(sayi1);
+// //Tam sayı
+// sayi1=55;
+// console.log(sayi1);
 
-//Virgüllü sayı
-sayi1=44.23;
-console.log(sayi1);
+// //Virgüllü sayı
+// sayi1=44.23;
+// console.log(sayi1);
 
-//toFixed: virgülden sonra kaç rakam gösterim sağlansın
-const sayi=56.12345;
-console.log(sayi.toFixed(3));
+// //toFixed: virgülden sonra kaç rakam gösterim sağlansın
+// const sayi=56.12345;
+// console.log(sayi.toFixed(3));
 
-//Veri türü nedir ?
-console.log(typeof sayi1);
+// //Veri türü nedir ?
+// console.log(typeof sayi1);
 
-//Bilimsel Gösterim
-let bilimselGosterim;
-bilimselGosterim=13E+5;
-console.log(bilimselGosterim);
+// //Bilimsel Gösterim
+// let bilimselGosterim;
+// bilimselGosterim=13E+5;
+// console.log(bilimselGosterim);
 
-bilimselGosterim=13E-5;
-console.log(bilimselGosterim);
+// bilimselGosterim=13E-5;
+// console.log(bilimselGosterim);
 
-//toExponential: verilen bir sayıyı bilimsel olarak gösterimini sağlar
-const sayi2=56000;
-console.log(sayi2.toExponential(3));
+// //toExponential: verilen bir sayıyı bilimsel olarak gösterimini sağlar
+// const sayi2=56000;
+// console.log(sayi2.toExponential(3));
 
-//CAST
-// const number= Number(prompt("Lütfen bir sayı giriniz"));
-// console.log(number**2);
+// //toPrecision()
+// const sayi3=56.12345;
+// console.log(sayi3.toPrecision(3));
 
-//Infinity
-const number2=4/0;
-console.log(number2)
+// //CAST
+//  const number= Number(prompt("Lütfen bir sayı giriniz"));
+//  console.log(number**2);
 
-//NaN: sayı değil
-let number3=4/"asd";
-console.log(number3);
+// //Infinity
+// const number2=4/0;
+// console.log(number2)
+
+// //NaN: sayı değil
+// let number3=4/"asd";
+// console.log(number3);
 
 //isNaN: Bir sayı değildir.
 //Eğer false dönerse bu bir sayıdır.
 //Eğer true dönerse bu bir sayı değildir.
-console.log(isNaN(44));
+//console.log(isNaN(44));
 
 //Sayı sistemleri
 //Binary(2)  ==> 0 ve 1
@@ -262,21 +266,55 @@ console.log(isNaN(44));
 //Hexadecimal(16)==> 0-1-2-3-4-5-6-7-8-9-a-b-c-d-e-f
 
 //Binary,Octal veya Hexadecimal ==> 10'luk tabana çevirmek
-let binary=0b01101010101;
-console.log(binary);
+// let binary=0b01101010101;
+// console.log(binary);
 
-let octal=076210;
-console.log(octal);
+// let octal=076210;
+// console.log(octal);
 
-let hexadecimal=0xff1;
-console.log(hexadecimal);
-
-
-
-
+// let hexadecimal=0xff1;
+// console.log(hexadecimal);
 
 ///////////////////////////////////////
 //KELIMELER 
+//Dikkat ==> Boşluk karakterdir.
+//Aşağıdakiler Javada aynı olan Fonksiyonlar
+const kelime = "Merhabalar Güzel insanlar Güzel";
+document.write(kelime + "<br/>");
+
+//length trim
+document.write("Harf Sayısı: " + kelime.length + "<br/>");
+document.write("Traşlanmış Harf Sayısı: " + kelime.trim().length + "<br/>");
+
+//toLowerCase toUpperCase
+document.write(kelime.toLowerCase() + "<br/>");
+document.write(kelime.toUpperCase() + "<br/>");
+
+//startsWith endsWith
+document.write("Bununla mı başlıyor ? " + kelime.startsWith('M') + "<br/>");
+document.write("Bununla mı bitiyor ? " + kelime.endsWith(' ') + "<br/>");
+
+//concat,replace
+document.write(kelime.concat(" -INC Sona eklendim")+ "<br/>");
+document.write(kelime.replace(kelime,"değiştirdim")+ "<br/>");
+
+//parçalama:
+//Dikkattt: substring=> Saymaya Sıfırdan başlar 
+document.write(kelime.substring(1)+ "<br/>");
+document.write(kelime.substring(0,3)+ "<br/>");
+
+//charAt()==> sayı verecem bana tek bir harf dönecek
+//Dikkattt: charAt() => Saymaya Sıfırdan başlar 
+document.write(kelime.charAt(0)+ "<br/>");
+
+
+//indexOf()==> ben harf vereceğim bana sayı dönecek
+//Dikkattt: indexOf() => Saymaya Sıfırdan başlar 
+//indexOf() => Soldan saymaya başlar ilk bulduğu yerde indisi döndürür
+document.write(kelime.indexOf('Güzel')+ "<br/>");
+//lastIndexOf() => Sağdan saymaya başlar ilk bulduğu yerde indisi döndürür
+document.write(kelime.lastIndexOf('Güzel')+ "<br/>");
+
 
 
 
