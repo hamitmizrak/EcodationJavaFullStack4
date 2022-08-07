@@ -335,17 +335,21 @@ document.write(kelime.lastIndexOf('Güzel')+ "<br/>");
 //Number() ==> String'i Sayıya çevirir.
 let variable1 = Number("4");
 document.write(variable1 ** 2 + "<br/>");
+document.write(typeof variable1 + "<br/>");
 
 //Number() ==> String'i Sayıya çevirir.
 let variable2 = parseInt("4");
 document.write(variable2 ** 2 + "<br/>");
+document.write(typeof variable2 + "<br/>");
 
 //2-)Sayıyı ==> String'e Sayıya Çevirmek
 let variable3 = String(444);
 document.write(variable3.length + "<br/>");
+document.write(typeof variable3 + "<br/>");
 
 let variable4 = 444
 document.write(variable4.toString() + "<br/>");
+document.write(typeof variable4 + "<br/>");
 
 
 
