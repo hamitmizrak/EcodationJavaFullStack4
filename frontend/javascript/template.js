@@ -40,4 +40,50 @@ console.log(degiskenAdi55);
 
 // sayı ile ve ($ ve _) haricinden özel simgeyle başlanmaz kullanalım
 
+///////////////////////////////////////
+//Typeof: Değiken türünü bize söyler
+var str = "Merahbalar";
+console.log(typeof str);
+
+var sayi = 44;
+console.log(typeof sayi);
+
+var virgul = 44.55;
+console.log(typeof virgul);
+
+var karar = true;
+console.log(typeof karar);
+
+//NOT: dizi ve object türü ==> objecttir.
+var object = {};
+console.log(typeof object);
+
+var dizi = [];
+console.log(typeof dizi);
+
+
+///////////////////////////////////////
+//whoisting: değişken türünü sonra yaz.
+degisken = 55;
+var degisken;
+console.log(degisken);
+
+///////////////////////////////////////
+// var   ==> global ==>
+// let   ==> local  ==> ES6 (2015)
+// const ==> local  ==> ES6 (2015) ==> Sabit değiştirmezsini
+
+///////////////////////////////////////
+//Variable Declaration
+//Değer atamadan önce sadece değişken oluşturmaya denir.
+var number;
+console.log(number);
+//result: undefined olarak döner
+
+//variable initialization
+// ilk değer ataması anlamına gelir.
+// Toplamada etkisiz ==> 0(sıfır) sayıdır.
+// Çarpmada etkisiz ==> 1(bir) sayıdır.
+var initData="";
+//Nullpointer excepiton veya undefined almayız
 
