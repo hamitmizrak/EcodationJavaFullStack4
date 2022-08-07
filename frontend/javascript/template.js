@@ -172,30 +172,30 @@
 //NOT: iç içe math yazılabilinir.
 
 //sabit sayılar
-console.log("E: " + Math.E);
-console.log("PI :" + Math.PI);
+// console.log("E: " + Math.E);
+// console.log("PI :" + Math.PI);
 
-//Matemetiksel
-console.log("En küçüğü :" + Math.min(2, 5, 2, 666, 12));
-console.log("En Büyüğü :" + Math.max(2, 5, 2, 666, 12));
-console.log("Mutlak Değer :" + Math.abs(-100));
-console.log("Karakök Değer :" + Math.sqrt(16));
-console.log("Üslü Değer :" + Math.pow(2, 5));
-console.log("Üslü Değer :" + 2 ** 5);//ES6(2015) exponentiation
+// //Matemetiksel
+// console.log("En küçüğü :" + Math.min(2, 5, 2, 666, 12));
+// console.log("En Büyüğü :" + Math.max(2, 5, 2, 666, 12));
+// console.log("Mutlak Değer :" + Math.abs(-100));
+// console.log("Karakök Değer :" + Math.sqrt(16));
+// console.log("Üslü Değer :" + Math.pow(2, 5));
+// console.log("Üslü Değer :" + 2 ** 5);//ES6(2015) exponentiation
 
-//Yuvarlamak
-console.log("Aşağı Yuvarla :" + Math.floor(2.9));
-console.log("Yukarı Yuvarla :" + Math.ceil(2.1));
-console.log(".5 ve üstünde üstüne yuvarla :" + Math.round(6.5));
-console.log(".4 ve üstünde aşağı yuvarla :" + Math.round(6.4));
+// //Yuvarlamak
+// console.log("Aşağı Yuvarla :" + Math.floor(2.9));
+// console.log("Yukarı Yuvarla :" + Math.ceil(2.1));
+// console.log(".5 ve üstünde üstüne yuvarla :" + Math.round(6.5));
+// console.log(".4 ve üstünde aşağı yuvarla :" + Math.round(6.4));
 
-//Sin Cos
-console.log(Math.sin(45));
-console.log(Math.cos(45));
+// //Sin Cos
+// console.log(Math.sin(45));
+// console.log(Math.cos(45));
 
 
-//Rastgele
-console.log(Math.round(Math.random() * 10 + 1));
+// //Rastgele
+// console.log(Math.round(Math.random() * 10 + 1));
 
 //ÖDEV
 // Math Ödev
@@ -207,9 +207,66 @@ console.log(Math.round(Math.random() * 10 + 1));
 // s5-) Bu sayılardan en küçüğü mutlak değeri nedir ?
 // s6-) Bu sayılardan en küçüğü alt taban en büyüğü üst taban şeklinde üstünü alalım
 
+///////////////////////////////////////
+//SAYILAR 
+let sayi1;
+
+//Tam sayı
+sayi1=55;
+console.log(sayi1);
+
+//Virgüllü sayı
+sayi1=44.23;
+console.log(sayi1);
+
+//Veri türü nedir ?
+console.log(typeof sayi1);
+
+//Bilimsel Gösterim
+let bilimselGosterim;
+bilimselGosterim=13E+5;
+console.log(bilimselGosterim);
+
+bilimselGosterim=13E-5;
+console.log(bilimselGosterim);
+
+//CAST
+// const number= Number(prompt("Lütfen bir sayı giriniz"));
+// console.log(number**2);
+
+//Infinity
+const number2=4/0;
+console.log(number2)
+
+//NaN: sayı değil
+let number3=4/"asd";
+console.log(number3);
+
+//isNaN: Bir sayı değildir.
+//Eğer false dönerse bu bir sayıdır.
+//Eğer true dönerse bu bir sayı değildir.
+console.log(isNaN(44));
+
+//Sayı sistemleri
+//Binary(2)  ==> 0 ve 1
+//Octal(8)   ==> 0-1-2-3-4-5-6-7
+//Decimal(10)==> 0-1-2-3-4-5-6-7-8-9
+//Hexadecimal(16)==> 0-1-2-3-4-5-6-7-8-9-a-b-c-d-e-f
+
+//Binary,Octal veya Hexadecimal ==> 10'luk tabana çevirmek
+let binary=0b01101010101;
+console.log(binary);
+
+let octal=076210;
+console.log(octal);
+
+let hexadecimal=0xff1;
+console.log(hexadecimal);
 
 
 
+///////////////////////////////////////
+//KELIMELER 
 
 
 
