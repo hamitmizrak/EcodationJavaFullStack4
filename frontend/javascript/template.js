@@ -307,7 +307,6 @@ document.write(kelime.substring(0,3)+ "<br/>");
 //Dikkattt: charAt() => Saymaya Sıfırdan başlar 
 document.write(kelime.charAt(0)+ "<br/>");
 
-
 //indexOf()==> ben harf vereceğim bana sayı dönecek
 //Dikkattt: indexOf() => Saymaya Sıfırdan başlar 
 //indexOf() => Soldan saymaya başlar ilk bulduğu yerde indisi döndürür
@@ -316,7 +315,37 @@ document.write(kelime.indexOf('Güzel')+ "<br/>");
 document.write(kelime.lastIndexOf('Güzel')+ "<br/>");
 
 
+//ÖDEV
+// kullanıcı tarafından girilen bir kelimenin
+//S-1) Kaç karakterlidir ?
+//S-2) boşluklar alınarak Kaç karakterlidir ?
+//S-3) bütün kelimeyi küçük harfle göstermek ?
+//S-4) bütün kelimeyi büyük harfle göstermek ?
+//S-5) ilk harf nedir  ?
+//S-6) girdiğiniz kelime java ile başlıyor mu  ?
+//S-7) girdiğiniz kelimenin sonuna "-ben js öğreniyorum"   ?
+//S-8) girdiğiniz 0 ile 4 arasındaki indexi ekranda gösterin   ?
+//S-9) Kullanıcıdan alınan başka bir kelimeyle birinci olan kelimeyle yer değiştirmek ?
 
+///////////////////////////////////////
+
+//CAST 
+//1-) String'i ==>  Sayıya Çevirmek
+//Number() parseInt() arasındaki fark ==> Özkan
+//Number() ==> String'i Sayıya çevirir.
+let variable1 = Number("4");
+document.write(variable1 ** 2 + "<br/>");
+
+//Number() ==> String'i Sayıya çevirir.
+let variable2 = parseInt("4");
+document.write(variable2 ** 2 + "<br/>");
+
+//2-)Sayıyı ==> String'e Sayıya Çevirmek
+let variable3 = String(444);
+document.write(variable3.length + "<br/>");
+
+let variable4 = 444
+document.write(variable4.toString() + "<br/>");
 
 
 
