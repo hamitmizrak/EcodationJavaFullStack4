@@ -16,7 +16,7 @@
 //Not:
 //""  ==> Çift tırnak kullanabiliriz.
 //''  ==> Tek tırnak kullanabiliriz.
-// `` ==> backtick 
+// `` ==> backtick
 ///////////////////////////////////////
 //variable
 // var dinamik bir değerdir.
@@ -95,10 +95,10 @@
 //ADI                   SEMBOL    İŞLEMİ
 //-----------------------------------------------------------
 //additional            +         toplama
-//substraction          -         çıkarma    
-//multiplation          *         çarpma    
+//substraction          -         çıkarma
+//multiplation          *         çarpma
 //exponentiation        **        üslü sayılar (ES6)
-//division              /         Bölme     
+//division              /         Bölme
 //modules               %         Kalan
 //postfix increment     X++       Artırmayı işlemden sonra yap
 //postfix deincrement   X--       Azaltmayı işlemden sonra yap
@@ -131,22 +131,22 @@
 ///////////////////////////////////////
 //undefined: tanımsız
 //Çözümü: değişkene bir değer vermektir
-var varible;
-console.log(varible);
+// var varible;
+// console.log(varible);
 
 //Infinity: Sonsıuz,tanımsız
 //Çözümü: Sıfıra bölmemek
-var number=4/0;
-console.log(number);
+// var number=4/0;
+// console.log(number);
 
 //NaN: Not A Number
 //Çözümü: Bütün değerler sayı olmalıdır veya cast etmeliyiz.
-var result=4/"asd";
-console.log(result);
+// var result=4/"asd";
+// console.log(result);
 
 //isNaN: is not a number:  bir sayı değildir.
 //false: bu bir sayıdır anlamına gelir.
-console.log(isNaN(44));
+// console.log(isNaN(44));
 
 //new  : hafızadan bir yer açmak
 //null : hafızadaki yeri kapatmak
@@ -157,8 +157,8 @@ console.log(isNaN(44));
 // Bazen özel simgelerimizi işlem yapmadığımız durumlarda imdadımıza koşar
 // single quote:    \'
 // multiple quote:   \"
-console.log("1.satır\n2.satır");
-console.log("1.satır\n\t2.satır");
+// console.log("1.satır\n2.satır");
+// console.log("1.satır\n\t2.satır");
 
 ///////////////////////////////////////
 //JavaScript Keywords:
@@ -168,7 +168,44 @@ console.log("1.satır\n\t2.satır");
 //debugger : debug atarken kullanıyoruz.
 
 ///////////////////////////////////////
-//Math:
+//Math:Önceden yazılmış matematikse betimlerdir.
+//NOT: iç içe math yazılabilinir.
+
+//sabit sayılar
+console.log("E: " + Math.E);
+console.log("PI :" + Math.PI);
+
+//Matemetiksel
+console.log("En küçüğü :" + Math.min(2, 5, 2, 666, 12));
+console.log("En Büyüğü :" + Math.max(2, 5, 2, 666, 12));
+console.log("Mutlak Değer :" + Math.abs(-100));
+console.log("Karakök Değer :" + Math.sqrt(16));
+console.log("Üslü Değer :" + Math.pow(2, 5));
+console.log("Üslü Değer :" + 2 ** 5);//ES6(2015) exponentiation
+
+//Yuvarlamak
+console.log("Aşağı Yuvarla :" + Math.floor(2.9));
+console.log("Yukarı Yuvarla :" + Math.ceil(2.1));
+console.log(".5 ve üstünde üstüne yuvarla :" + Math.round(6.5));
+console.log(".4 ve üstünde aşağı yuvarla :" + Math.round(6.4));
+
+//Sin Cos
+console.log(Math.sin(45));
+console.log(Math.cos(45));
+
+
+//Rastgele
+console.log(Math.round(Math.random() * 10 + 1));
+
+//ÖDEV
+// Math Ödev
+// Kullanıcıda tarafından aldığımız 2 tane sayının
+// s1-) Bu sayılardan en küçüğü nedir ?
+// s2-) Bu sayılardan en büyüğü nedir ?
+// s3-) Bu sayılardan en büyüğü karekökü nedir ?
+// s4-) Bu sayılardan en büyüğü karekökünün üste yuvarlıyalım nedir ?
+// s5-) Bu sayılardan en küçüğü mutlak değeri nedir ?
+// s6-) Bu sayılardan en küçüğü alt taban en büyüğü üst taban şeklinde üstünü alalım
 
 
 
