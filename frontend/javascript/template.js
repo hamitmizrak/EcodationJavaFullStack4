@@ -219,6 +219,10 @@ console.log(sayi1);
 sayi1=44.23;
 console.log(sayi1);
 
+//toFixed: virgülden sonra kaç rakam gösterim sağlansın
+const sayi=56.12345;
+console.log(sayi.toFixed(3));
+
 //Veri türü nedir ?
 console.log(typeof sayi1);
 
@@ -229,6 +233,10 @@ console.log(bilimselGosterim);
 
 bilimselGosterim=13E-5;
 console.log(bilimselGosterim);
+
+//toExponential: verilen bir sayıyı bilimsel olarak gösterimini sağlar
+const sayi2=56000;
+console.log(sayi2.toExponential(3));
 
 //CAST
 // const number= Number(prompt("Lütfen bir sayı giriniz"));
@@ -262,6 +270,8 @@ console.log(octal);
 
 let hexadecimal=0xff1;
 console.log(hexadecimal);
+
+
 
 
 
