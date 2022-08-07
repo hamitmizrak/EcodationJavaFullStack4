@@ -24,49 +24,49 @@
 // camelCase kullanalım.
 
 // camelCase kullanalım
-var degiskenAdi = true;
-console.log(degiskenAdi);
+// var degiskenAdi = true;
+// console.log(degiskenAdi);
 
-// $ ve _ ile başlayabiliriz
-var $degiskenAdi = 44;
-console.log($degiskenAdi);
+// // $ ve _ ile başlayabiliriz
+// var $degiskenAdi = 44;
+// console.log($degiskenAdi);
 
-var _degiskenAdi = 23.55;
-console.log(_degiskenAdi);
+// var _degiskenAdi = 23.55;
+// console.log(_degiskenAdi);
 
-// sayılarla ile bitebilir.
-var degiskenAdi55 = "Merbalar";
-console.log(degiskenAdi55);
+// // sayılarla ile bitebilir.
+// var degiskenAdi55 = "Merbalar";
+// console.log(degiskenAdi55);
 
 // sayı ile ve ($ ve _) haricinden özel simgeyle başlanmaz kullanalım
 
 ///////////////////////////////////////
 //Typeof: Değiken türünü bize söyler
-var str = "Merahbalar";
-console.log(typeof str);
+// var str = "Merahbalar";
+// console.log(typeof str);
 
-var sayi = 44;
-console.log(typeof sayi);
+// var sayi = 44;
+// console.log(typeof sayi);
 
-var virgul = 44.55;
-console.log(typeof virgul);
+// var virgul = 44.55;
+// console.log(typeof virgul);
 
-var karar = true;
-console.log(typeof karar);
+// var karar = true;
+// console.log(typeof karar);
 
-//NOT: dizi ve object türü ==> objecttir.
-var object = {};
-console.log(typeof object);
+// //NOT: dizi ve object türü ==> objecttir.
+// var object = {};
+// console.log(typeof object);
 
-var dizi = [];
-console.log(typeof dizi);
+// var dizi = [];
+// console.log(typeof dizi);
 
 
 ///////////////////////////////////////
 //whoisting: değişken türünü sonra yaz.
-degisken = 55;
-var degisken;
-console.log(degisken);
+// degisken = 55;
+// var degisken;
+// console.log(degisken);
 
 ///////////////////////////////////////
 // var   ==> global ==>
@@ -76,15 +76,15 @@ console.log(degisken);
 ///////////////////////////////////////
 //Variable Declaration
 //Değer atamadan önce sadece değişken oluşturmaya denir.
-var number;
-console.log(number);
+// var number;
+// console.log(number);
 //result: undefined olarak döner
 
 //variable initialization
 // ilk değer ataması anlamına gelir.
 // Toplamada etkisiz ==> 0(sıfır) sayıdır.
 // Çarpmada etkisiz ==> 1(bir) sayıdır.
-var initData="";
+//var initData="";
 //Nullpointer excepiton veya undefined almayız
 ///////////////////////////////////////
 //OPERATORS
@@ -112,6 +112,63 @@ var initData="";
 // ==   =>Eşit demek(Türüne bakmadan)
 // ===  =>Eşit demek(Türüne bakarak)
 
+///////////////////////////////////////
+//Kullanıcıdan veri almak istersek
+//prompt: versiinde bize String yani kelime döner biz bunu sayıya çevirmemiz gerekir.
+//var userData= Number(prompt("Lütfen bir sayı giriniz")) ;
+//console.log(userData*userData);
+
+///////////////////////////////////////
+//typeof: veri türünü bize söyler
+//instanceof: o verinin o türe ait olup olmadığı bilgisini bize verir.
+
+// var dizi=[];
+// console.log(dizi);
+// console.log(typeof(dizi));
+// console.log(dizi instanceof Array);
+// console.log(dizi instanceof Object);
+
+///////////////////////////////////////
+//undefined: tanımsız
+//Çözümü: değişkene bir değer vermektir
+var varible;
+console.log(varible);
+
+//Infinity: Sonsıuz,tanımsız
+//Çözümü: Sıfıra bölmemek
+var number=4/0;
+console.log(number);
+
+//NaN: Not A Number
+//Çözümü: Bütün değerler sayı olmalıdır veya cast etmeliyiz.
+var result=4/"asd";
+console.log(result);
+
+//isNaN: is not a number:  bir sayı değildir.
+//false: bu bir sayıdır anlamına gelir.
+console.log(isNaN(44));
+
+//new  : hafızadan bir yer açmak
+//null : hafızadaki yeri kapatmak
+//zero : hafızada bir yere sahip ancak değeri sıfır
+///////////////////////////////////////
+// Escape Character: Çıkış karakteri demektir.
+// Escape Character: Back Slash (\)
+// Bazen özel simgelerimizi işlem yapmadığımız durumlarda imdadımıza koşar
+// single quote:    \'
+// multiple quote:   \"
+console.log("1.satır\n2.satır");
+console.log("1.satır\n\t2.satır");
+
+///////////////////////////////////////
+//JavaScript Keywords:
+//break    : döngü durdurmak için
+//return   : metotu durdurmak ve değer almak için
+//continue : sadece o anda çalışma sonrasında döngüde devam et
+//debugger : debug atarken kullanıyoruz.
+
+///////////////////////////////////////
+//Math:
 
 
 
