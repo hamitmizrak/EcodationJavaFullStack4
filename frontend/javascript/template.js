@@ -86,4 +86,48 @@ console.log(number);
 // Çarpmada etkisiz ==> 1(bir) sayıdır.
 var initData="";
 //Nullpointer excepiton veya undefined almayız
+///////////////////////////////////////
+//OPERATORS
+// 8 bit = 1 byte
+// 1 bit (0 veya 1) oluşan anlamına gelir
+
+
+//ADI                   SEMBOL    İŞLEMİ
+//-----------------------------------------------------------
+//additional            +         toplama
+//substraction          -         çıkarma    
+//multiplation          *         çarpma    
+//exponentiation        **        üslü sayılar (ES6)
+//division              /         Bölme     
+//modules               %         Kalan
+//postfix increment     X++       Artırmayı işlemden sonra yap
+//postfix deincrement   X--       Azaltmayı işlemden sonra yap
+//pre increment         ++X       Artırmayı işlemden önce yap
+//pre deincrement       --X       Azaltmayı işlemden önce yap
+
+// ! ==> değil anlamına gelir
+
+//Atama Operatörürü
+// =    =>Atama operatörü
+// ==   =>Eşit demek(Türüne bakmadan)
+// ===  =>Eşit demek(Türüne bakarak)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
