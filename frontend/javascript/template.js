@@ -411,28 +411,86 @@
 //1-) Immedia Function
 //Immedia Function: Hemen Göster ve fonkisyonu çağırmamıza gerek yoktur.
 //Dikkat: Immedia öncesinde function olmaması gferekiyor
-(function () {
-    console.log("Immedia Function");
-})();
+// (function () {
+//     console.log("1-Immedia Function");
+//     document.write("<br/> 1-Immedia Function")
+// })();
 
-//2-) Normal Function
-function normalFunction() {
-    console.log("normal Function");
+// //2-) Normal Function
+// function normalFunction() {
+//     console.log("2-normal Function");
+//     document.write("<br/> 2-normal Function")
+// }
+// normalFunction();
+
+// //3-) Anonymous Function
+// let anonymousFunctionData = function () {
+//     console.log("3-Anonymous Function");
+//     document.write("<br/> 3-Anonymous Function")
+// }
+// anonymousFunctionData();
+
+// //4-) Array Function
+// let arrowFunctionData = () => {
+//     console.log("4-Arrow Function");
+//     document.write("<br/> 4-Arrow Function")
+// }
+// arrowFunctionData()
+
+///////////////////////////////
+//JavaScript 
+//Senkron olarak çalışır.
+//Senkron: Aynı anda sadece bir tane process çalışır
+//Asenkron: Aynı anda birden fazla process çalışır.
+
+//Asenkron için çözümler
+//1-) Monad Senkron
+
+//1-) Monad Senkron
+function monadBirinci(number){
+    console.log(Math.pow(number, 2));
 }
-normalFunction();
-
-//3-) Anonymous Function
-let data = function () {
-    console.log("Anonymous Function");
+function monadIkinci(){
+    const userData= Number(prompt("bir sayı giriniz"));
+   //monad
+   monadBirinci(userData);
 }
-data();
+ikinci();
 
-//4-) Array Function
-let data2 = () => {
-    console.log("Arrow Function");
+//2-) CallBackFunction
+function callBackBirinci(number){
+    console.log(Math.pow(number, 2));
 }
-data2()
+function callBackIkinci(callback){
+    const userData= Number(prompt("bir sayı giriniz"));
+   //monad
+   callback(userData);
+}
+callBackIkinci(callBackBirinci);
 
+//3-) setTimeOut:
+// Fonksiyonlarda belli bir zamandan sonra çalışmasını isteriz.
+// setTimeout(fonkisyon(), timer mili-saniye cinsinden)
+// function istediğimiz zaman aralığında çalışmasını sağlarız.
+
+//1.GÖSTERİM => setTimeOut ==> normal Fonkisyon
+function setTimeOutBirinci(){
+    console.log("Set Time out ==> 1. Fonksiyon 5 saniye");
+}
+function setTimeOutIkinci(){
+    console.log("Set Time out ==> 2. Fonksiyon 4 saniye");
+}
+setTimeout(setTimeOutBirinci,5000);
+setTimeout(setTimeOutIkinci,4000);
+
+//2.GÖSTERİM => setTimeOut ==> anonymous function
+setTimeout(function (){console.log("Set Time out ==> 3. Fonksiyon 3 saniye");},3000);
+
+//3.GÖSTERİM => setTimeOut ==> anonymous function
+setTimeout(function (){console.log("Set Time out ==> anonymous function 2 saniye");},2000);
+
+//4.GÖSTERİM => setTimeOut ==> arrow function
+setTimeout( () =>{console.log("Set Time out ==> arrow function 1 saniye");},1000);
 
 
 
