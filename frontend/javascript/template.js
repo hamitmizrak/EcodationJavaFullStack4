@@ -493,6 +493,7 @@
 //setTimeout( () =>{console.log("Set Time out ==> arrow function 1 saniye");},1000);
 
 ////////////////////////////////////////////
+//CONDITIONAL
 let dataFunction = () => {
     const number = Number(prompt("Lütfen bir sayı giriniz"));
     if (number == 1) {
@@ -565,7 +566,47 @@ let dataFunction5 = () => {
             break;
     }
 }
-dataFunction5();
+//dataFunction5();
+
+///////////////////////////////
+//LOOP
+
+
+let loopFunction = () => {
+    console.log(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10);
+
+    //Sıfır => (Çarpmada Yutan eleman) 
+    //Sıfır => (Toplamada Etkisiz eleman) 
+
+    let sum = 0;
+    //1-) iterative for
+    for (let index = 1; index <= 10; index++) {
+        sum = sum + index;
+    }
+    console.log("for ==>" + sum);
+
+
+    //2-) while
+    let sum2 = 0;
+    let k = 1;
+    while (k <= 10) {
+        sum2 += k;
+        k++
+    }
+    console.log("while ==>" + sum2);
+
+    //3-)do while: en kötü şartta en az 1 kere çalışır.
+    let sum3 = 0;
+    let m = 1;
+    do {
+        sum3 += m;
+        m++;
+    } while (m <= 10);
+    console.log("do-while ==>" + sum3);
+
+    // 4-) diziler göreceğiz ===> forIn(indis) forOf(hepsi)
+}
+loopFunction();
 
 
 
