@@ -438,7 +438,7 @@
 // arrowFunctionData()
 
 ///////////////////////////////
-//JavaScript 
+//JavaScript
 //Senkron olarak çalışır.
 //Senkron: Aynı anda sadece bir tane process çalışır
 //Asenkron: Aynı anda birden fazla process çalışır.
@@ -447,26 +447,26 @@
 //1-) Monad Senkron
 
 //1-) Monad Senkron
-function monadBirinci(number){
-    console.log(Math.pow(number, 2));
-}
-function monadIkinci(){
-    const userData= Number(prompt("bir sayı giriniz"));
-   //monad
-   monadBirinci(userData);
-}
-ikinci();
+// function monadBirinci(number){
+//     console.log(Math.pow(number, 2));
+// }
+// function monadIkinci(){
+//     const userData= Number(prompt("bir sayı giriniz"));
+//    //monad
+//    monadBirinci(userData);
+// }
+//ikinci();
 
 //2-) CallBackFunction
-function callBackBirinci(number){
-    console.log(Math.pow(number, 2));
-}
-function callBackIkinci(callback){
-    const userData= Number(prompt("bir sayı giriniz"));
-   //monad
-   callback(userData);
-}
-callBackIkinci(callBackBirinci);
+// function callBackBirinci(number){
+//     console.log(Math.pow(number, 2));
+// }
+// function callBackIkinci(callback){
+//     const userData= Number(prompt("bir sayı giriniz"));
+//    //monad
+//    callback(userData);
+// }
+//callBackIkinci(callBackBirinci);
 
 //3-) setTimeOut:
 // Fonksiyonlarda belli bir zamandan sonra çalışmasını isteriz.
@@ -474,26 +474,98 @@ callBackIkinci(callBackBirinci);
 // function istediğimiz zaman aralığında çalışmasını sağlarız.
 
 //1.GÖSTERİM => setTimeOut ==> normal Fonkisyon
-function setTimeOutBirinci(){
-    console.log("Set Time out ==> 1. Fonksiyon 5 saniye");
-}
-function setTimeOutIkinci(){
-    console.log("Set Time out ==> 2. Fonksiyon 4 saniye");
-}
-setTimeout(setTimeOutBirinci,5000);
-setTimeout(setTimeOutIkinci,4000);
+// function setTimeOutBirinci(){
+//     console.log("Set Time out ==> 1. Fonksiyon 5 saniye");
+// }
+// function setTimeOutIkinci(){
+//     console.log("Set Time out ==> 2. Fonksiyon 4 saniye");
+// }
+//setTimeout(setTimeOutBirinci,5000);
+//setTimeout(setTimeOutIkinci,4000);
 
 //2.GÖSTERİM => setTimeOut ==> anonymous function
-setTimeout(function (){console.log("Set Time out ==> 3. Fonksiyon 3 saniye");},3000);
+///setTimeout(function (){console.log("Set Time out ==> 3. Fonksiyon 3 saniye");},3000);
 
 //3.GÖSTERİM => setTimeOut ==> anonymous function
-setTimeout(function (){console.log("Set Time out ==> anonymous function 2 saniye");},2000);
+//setTimeout(function (){console.log("Set Time out ==> anonymous function 2 saniye");},2000);
 
 //4.GÖSTERİM => setTimeOut ==> arrow function
-setTimeout( () =>{console.log("Set Time out ==> arrow function 1 saniye");},1000);
+//setTimeout( () =>{console.log("Set Time out ==> arrow function 1 saniye");},1000);
+
+////////////////////////////////////////////
+let dataFunction = () => {
+    const number = Number(prompt("Lütfen bir sayı giriniz"));
+    if (number == 1) {
+        console.log("sayı 1");
+    } else {
+        console.log("farklı bir sayıdır");
+    }
+}
+//dataFunction();
 
 
+let dataFunction2 = () => {
+    const number = Number(prompt("Lütfen bir sayı giriniz"));
+    if (number == 1)
+        console.log("sayı 1");
+    else
+        console.log("farklı bir sayıdır");
+}
+//dataFunction2();
 
+//ternary
+let dataFunction3 = () => {
+    const number = Number(prompt("Lütfen bir sayı giriniz"));
+    let result = (number == 1) ? "sayı 1" : "farklı bir sayıdır";
+    console.log(result);
+}
+//dataFunction3();
+
+
+let dataFunction4 = () => {
+    const number = Number(prompt("Lütfen bir sayı giriniz"));
+    if (number === 1) {
+        console.log("sayı 1");
+    } else if (number === 2) {
+        console.log("sayı 2");
+    } else if (number === 3) {
+        console.log("sayı 3");
+    } else if (number === 4) {
+        console.log("sayı 4");
+    } else if (number === 5) {
+        console.log("sayı 5");
+    } else {
+        console.log("farklı bir sayıdır");
+    }
+}
+//dataFunction4();
+
+//Switch Case
+let dataFunction5 = () => {
+    const number = Number(prompt("Lütfen bir sayı giriniz"));
+    switch (number) {
+        case 1:
+            console.log("sayı 1");
+            break;
+        case 2:
+            console.log("sayı 2");
+            break;
+        case 3:
+            console.log("sayı 3");
+            break;
+        case 4:
+            console.log("sayı 4");
+            break;
+        case 5:
+            console.log("sayı 5");
+            break;
+
+        default:
+            console.log("farklı bir sayıdır");
+            break;
+    }
+}
+dataFunction5();
 
 
 
