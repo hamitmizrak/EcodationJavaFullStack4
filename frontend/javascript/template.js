@@ -569,9 +569,7 @@ let dataFunction5 = () => {
 //dataFunction5();
 
 ///////////////////////////////
-//LOOP
-
-
+//LOOP: Loop: Sürekli kendini tekrar eden verilerde kolaylıkla sağlaması için kullanılır.
 let loopFunction = () => {
     console.log(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10);
 
@@ -613,10 +611,92 @@ let loopFunction = () => {
 
     // 4-) diziler göreceğiz ===> forIn(indis) forOf(hepsi)
 }
-loopFunction();
+//loopFunction();
+////////////////////////////////////////////
+
+//return : metotu kesmek, durmak,kırmak
+//break : döngüyü kesmek,durmak,kırmak
+//continue:saedece o döngüde durmak sonra devam etmek
+
+//ÖDEV (if-else for break continue)
+//Fonksiyonlarla
+//Örnek: 1 ile kullanıcının vereceği (prompt) bitiş sayısına göre
+//kullancı: 5 verdi diyelim 1<=X<=5
+//1.adım: kaç tane sayı var ?
+//2.adım: sayı toplamları var ?
+//3.adım: kaç tane tek  sayı var ?
+//4.adım: tek sayılar toplamı ?
+//5.adım: tek sayılar gösterelim ?
+//6.adım: kaç tane çift  sayı var ?
+//7.adım: çift sayılar toplamı ?
+//8.adım: çift sayılar gösterelim ?
+//Eğer verilen sayılarda 7 sayısı varsa bunu eklemesin (continue)
+//Eğer bitiş sayısı 100 fazla ise 100'e kadar olanlar toplansın  (break)
+//Eğer kullanıcı başlangıç sayıdan küçük girerse uyaralım başlangıçtan büyük girmesini isteyelim
+//Eğer kullanıcı secret-key girerse yani 44 sayısını girerse program çalışmayı direk durdursun
 
 
+////////////////////////////////////////////
+//Date 
+let nowDateFunction=() => { 
+    let nowDate=new Date(2019,0,1,10,30,500);
+    nowDate.setHours(8);
+    document.writeln(nowDate);
+    document.writeln("<br/>"+nowDate.getHours());
+    document.writeln("<br/>"+nowDate.getDate());
+    document.writeln("<br/>"+nowDate.getMilliseconds());
+}
+//nowDateFunction();
 
+////////////////////////////////////////////
+//try-catch 
+let tryCatchFunction=() => { 
+try {
+    alertx("deneme");
+    console.log("1-Database.close()");
+} catch (error) {
+    console.log("Hata mesajı: "+error.message);
+    console.log("Hata mesajı adı: "+error.name);
+    console.log("Hata hepsi: "+error);
+    //console.log(error);
+} finally {
+    console.log("2-Database.close()");
+}
+}
+tryCatchFunction();
+
+// zorlayarak hata mesajı çıkarmak
+throw "Hata var";
+
+
+///////////////////////////////////////////
+//Örnek-1
+//y=3x+4k ==> 1.dereceden 2 bilinmyenli denklem
+//Kullanıcı tarafından alınan x ve k değerlerini hesaplayan algoritma yazınız ?
+
+
+//örnek-2
+//Kullanıcı tarafından alınan dereceyi  Fahrenhayta çeviren algoritma yapalım.
+//(derece*9/5)+32
+
+//örnek-3 operatör
+//4+3*2(3:3-1*6+9:1+(3:3))
+
+//Örnek-4
+// -5.9
+// 1-mutlak değeri alsın 5.9
+// 2-yuvarlama yapsın  6.0
+// 3-karesini alsın 36.00
+// 4-karekök alsın  6.0
+// 5-yuvarlama yapsın 6.0
+// 6-)çıkan sonucu 5 bölsün 6/5=1
+// 7-) iki sayı arasından karşılaştırma yapsın en küçüğünü alsın ve 1 ve 5
+// 8-) küçük sayı eğer tekse 3 eklesin çiftse 5 eklesin 
+
+
+//Örnek-5 : kullanıcı tarafıadnan girilen bir sayıyı negatif mi pozitif mi 
+
+// Haftanın günlerini bulan algoritma ? Function
 
 
 
