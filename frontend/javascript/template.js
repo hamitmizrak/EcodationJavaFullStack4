@@ -353,8 +353,53 @@
 
 
 ///////////////////////////////////////
-//Function
+//Function:
+// sürekli kodlarımızı  aynı kodları yazmak biizi yavaşlatır.
+// Clean Code mantığının dışında haraket etmemek için
+// Okunabilirliği artırmak
+// yazılabilirliği artırmak
+// sistem hızlandırmak v.s
 
+//Fonkisyonlarda common rules
+//camelCase kullanalım yapalım.
+// sıfat -isim kullanalım
+//Unutma: yazdığın fonkisyonu çağırmalasın (Immedia Function Hariç)
+// ES5 (anonymous Function) 
+// ES6 (2015) ==>Arrow function 
+// Immedia Function
+// JavaScript ==> Single Thread çalışır yani Senkron düzlemdedir
+// Biz yazdığımız kodları Asenkron (aynı anda birden fazla iş) için ==> callBackFunction ancak bunun yerine promise veya asyn await kullanalım.
+
+//1-) Returnsuz parametresiz Function
+function returnsuzParametresiz() {
+    console.log("returnsuz Parametresiz")
+}
+returnsuzParametresiz();
+
+//2-) Returnsuz parametreli Function
+// parametre: fonksiyon oluştururken yazdığımız 
+
+function returnsuzParametreli(adi,soyadi) {
+    console.log("returnsuz Parametreli ==> "+adi+" "+soyadi)
+}
+// argüman: fonkisyonu çağırırken kullanırılır.
+returnsuzParametreli('Hamit',"Mızrak");
+
+
+//3-) Returnlu Parametresiz Function
+function returnluParametresiz() {
+    return "returnlu Parametresiz";
+}
+let returnData=returnluParametresiz();
+console.log(returnData);
+
+
+//4-) Returnlu parametreli Function
+function returnluParametreli(adi,soyadi) {
+    return "returnlu Parametreli==> "+adi+" "+soyadi;
+}
+let returnData2=returnluParametreli('Hamit',"Mızrak");
+console.log(returnData2);
 
 
 
