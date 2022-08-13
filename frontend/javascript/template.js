@@ -276,43 +276,43 @@
 // console.log(hexadecimal);
 
 ///////////////////////////////////////
-//KELIMELER 
-//Dikkat ==> Boşluk karakterdir.
-//Aşağıdakiler Javada aynı olan Fonksiyonlar
-const kelime = "Merhabalar Güzel insanlar Güzel";
-document.write(kelime + "<br/>");
-
-//length trim
-document.write("Harf Sayısı: " + kelime.length + "<br/>");
-document.write("Traşlanmış Harf Sayısı: " + kelime.trim().length + "<br/>");
-
-//toLowerCase toUpperCase
-document.write(kelime.toLowerCase() + "<br/>");
-document.write(kelime.toUpperCase() + "<br/>");
-
-//startsWith endsWith
-document.write("Bununla mı başlıyor ? " + kelime.startsWith('M') + "<br/>");
-document.write("Bununla mı bitiyor ? " + kelime.endsWith(' ') + "<br/>");
-
-//concat,replace
-document.write(kelime.concat(" -INC Sona eklendim")+ "<br/>");
-document.write(kelime.replace(kelime,"değiştirdim")+ "<br/>");
-
-//parçalama:
-//Dikkattt: substring=> Saymaya Sıfırdan başlar 
-document.write(kelime.substring(1)+ "<br/>");
-document.write(kelime.substring(0,3)+ "<br/>");
-
-//charAt()==> sayı verecem bana tek bir harf dönecek
-//Dikkattt: charAt() => Saymaya Sıfırdan başlar 
-document.write(kelime.charAt(0)+ "<br/>");
-
-//indexOf()==> ben harf vereceğim bana sayı dönecek
-//Dikkattt: indexOf() => Saymaya Sıfırdan başlar 
-//indexOf() => Soldan saymaya başlar ilk bulduğu yerde indisi döndürür
-document.write(kelime.indexOf('Güzel')+ "<br/>");
-//lastIndexOf() => Sağdan saymaya başlar ilk bulduğu yerde indisi döndürür
-document.write(kelime.lastIndexOf('Güzel')+ "<br/>");
+// //KELIMELER
+// //Dikkat ==> Boşluk karakterdir.
+// //Aşağıdakiler Javada aynı olan Fonksiyonlar
+// const kelime = "Merhabalar Güzel insanlar Güzel";
+// document.write(kelime + "<br/>");
+//
+// //length trim
+// document.write("Harf Sayısı: " + kelime.length + "<br/>");
+// document.write("Traşlanmış Harf Sayısı: " + kelime.trim().length + "<br/>");
+//
+// //toLowerCase toUpperCase
+// document.write(kelime.toLowerCase() + "<br/>");
+// document.write(kelime.toUpperCase() + "<br/>");
+//
+// //startsWith endsWith
+// document.write("Bununla mı başlıyor ? " + kelime.startsWith('M') + "<br/>");
+// document.write("Bununla mı bitiyor ? " + kelime.endsWith(' ') + "<br/>");
+//
+// //concat,replace
+// document.write(kelime.concat(" -INC Sona eklendim")+ "<br/>");
+// document.write(kelime.replace(kelime,"değiştirdim")+ "<br/>");
+//
+// //parçalama:
+// //Dikkattt: substring=> Saymaya Sıfırdan başlar
+// document.write(kelime.substring(1)+ "<br/>");
+// document.write(kelime.substring(0,3)+ "<br/>");
+//
+// //charAt()==> sayı verecem bana tek bir harf dönecek
+// //Dikkattt: charAt() => Saymaya Sıfırdan başlar
+// document.write(kelime.charAt(0)+ "<br/>");
+//
+// //indexOf()==> ben harf vereceğim bana sayı dönecek
+// //Dikkattt: indexOf() => Saymaya Sıfırdan başlar
+// //indexOf() => Soldan saymaya başlar ilk bulduğu yerde indisi döndürür
+// document.write(kelime.indexOf('Güzel')+ "<br/>");
+// //lastIndexOf() => Sağdan saymaya başlar ilk bulduğu yerde indisi döndürür
+// document.write(kelime.lastIndexOf('Güzel')+ "<br/>");
 
 
 //ÖDEV
@@ -333,26 +333,27 @@ document.write(kelime.lastIndexOf('Güzel')+ "<br/>");
 //1-) String'i ==>  Sayıya Çevirmek
 //Number() parseInt() arasındaki fark ==> Özkan
 //Number() ==> String'i Sayıya çevirir.
-let variable1 = Number("4");
-document.write(variable1 ** 2 + "<br/>");
-document.write(typeof variable1 + "<br/>");
+// let variable1 = Number("4");
+// document.write(variable1 ** 2 + "<br/>");
+// document.write(typeof variable1 + "<br/>");
+//
+// //Number() ==> String'i Sayıya çevirir.
+// let variable2 = parseInt("4");
+// document.write(variable2 ** 2 + "<br/>");
+// document.write(typeof variable2 + "<br/>");
+//
+// //2-)Sayıyı ==> String'e Sayıya Çevirmek
+// let variable3 = String(444);
+// document.write(variable3.length + "<br/>");
+// document.write(typeof variable3 + "<br/>");
+//
+// let variable4 = 444
+// document.write(variable4.toString() + "<br/>");
+// document.write(typeof variable4 + "<br/>");
 
-//Number() ==> String'i Sayıya çevirir.
-let variable2 = parseInt("4");
-document.write(variable2 ** 2 + "<br/>");
-document.write(typeof variable2 + "<br/>");
 
-//2-)Sayıyı ==> String'e Sayıya Çevirmek
-let variable3 = String(444);
-document.write(variable3.length + "<br/>");
-document.write(typeof variable3 + "<br/>");
-
-let variable4 = 444
-document.write(variable4.toString() + "<br/>");
-document.write(typeof variable4 + "<br/>");
-
-
-
+///////////////////////////////////////
+//Function
 
 
 

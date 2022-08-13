@@ -1,4 +1,4 @@
-package com.hamitmizrak;
+package com.hamitmizrak.util;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -42,7 +42,7 @@ class ReflectionMain{
           //normal olanlar: sadece public değişkenleri getirir.
          //declare : hem public hemde private getirir.
             //paketAdi.classAdi
-            Class reflectionVariable=Class.forName("com.hamitmizrak.ReflectionTuto");
+            Class reflectionVariable=Class.forName("com.hamitmizrak.util.ReflectionTuto");
 
             //getContructor==> değişkenleri public olanlar gelir
             //getDeclaredConstructors==> değişkenleri public veya private olanlar gelir
