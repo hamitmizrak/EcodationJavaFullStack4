@@ -585,6 +585,9 @@ let loopFunction = () => {
     }
     console.log("for ==>" + sum);
 
+    //for ==> sonsuz döngü
+    //for(;;){}
+
 
     //2-) while
     let sum2 = 0;
@@ -594,6 +597,10 @@ let loopFunction = () => {
         k++
     }
     console.log("while ==>" + sum2);
+
+    //while ==> sonsuz döngü
+    //while(true){}
+
 
     //3-)do while: en kötü şartta en az 1 kere çalışır.
     let sum3 = 0;
