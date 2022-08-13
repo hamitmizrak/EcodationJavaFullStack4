@@ -717,4 +717,13 @@ let weekInDay=()=>{
 weekInDay()
 
 
+///////////////////////////////////////////
+//FrontEnd
+// Diziler 
+// Object 
+// ES5-ES6
+// DOM 
+// jquery
+// Sıfırdan bir proje FrontEnd
+
 
