@@ -663,10 +663,10 @@ try {
     console.log("2-Database.close()");
 }
 }
-tryCatchFunction();
+//tryCatchFunction();
 
 // zorlayarak hata mesajı çıkarmak
-throw "Hata var";
+//throw "Hata var";
 
 
 ///////////////////////////////////////////
@@ -696,8 +696,25 @@ throw "Hata var";
 
 //Örnek-5 : kullanıcı tarafıadnan girilen bir sayıyı negatif mi pozitif mi 
 
-// Haftanın günlerini bulan algoritma ? Function
-
+//Örnek-6  Haftanın günlerini bulan algoritma ? Function
+let weekInDay=()=>{
+    const nowDay=new Date().getDay();
+    console.log(nowDay);
+    try {
+        switch (nowDay) {
+            case 6:
+                console.log("cumartesi");
+                break;
+        
+            default:
+                console.log("haftanın günleri dışında girildi")
+                break;
+        }
+    } catch (error) {
+        console.log(error)
+    }
+}
+weekInDay()
 
 
 
