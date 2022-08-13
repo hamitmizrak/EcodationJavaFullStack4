@@ -329,7 +329,7 @@
 
 ///////////////////////////////////////
 
-//CAST 
+//CAST
 //1-) String'i ==>  Sayıya Çevirmek
 //Number() parseInt() arasındaki fark ==> Özkan
 //Number() ==> String'i Sayıya çevirir.
@@ -364,42 +364,76 @@
 //camelCase kullanalım yapalım.
 // sıfat -isim kullanalım
 //Unutma: yazdığın fonkisyonu çağırmalasın (Immedia Function Hariç)
-// ES5 (anonymous Function) 
-// ES6 (2015) ==>Arrow function 
+// ES5 (anonymous Function)
+// ES6 (2015) ==>Arrow function
 // Immedia Function
 // JavaScript ==> Single Thread çalışır yani Senkron düzlemdedir
 // Biz yazdığımız kodları Asenkron (aynı anda birden fazla iş) için ==> callBackFunction ancak bunun yerine promise veya asyn await kullanalım.
 
 //1-) Returnsuz parametresiz Function
-function returnsuzParametresiz() {
-    console.log("returnsuz Parametresiz")
+// function returnsuzParametresiz() {
+//     console.log("returnsuz Parametresiz")
+// }
+// returnsuzParametresiz();
+
+// //2-) Returnsuz parametreli Function
+// // parametre: fonksiyon oluştururken yazdığımız
+
+// function returnsuzParametreli(adi,soyadi) {
+//     console.log("returnsuz Parametreli ==> "+adi+" "+soyadi)
+// }
+// // argüman: fonkisyonu çağırırken kullanırılır.
+// returnsuzParametreli('Hamit',"Mızrak");
+
+
+// //3-) Returnlu Parametresiz Function
+// function returnluParametresiz() {
+//     return "returnlu Parametresiz";
+// }
+// let returnData=returnluParametresiz();
+// console.log(returnData);
+
+
+// //4-) Returnlu parametreli Function
+// function returnluParametreli(adi,soyadi) {
+//     return "returnlu Parametreli==> "+adi+" "+soyadi;
+// }
+// let returnData2=returnluParametreli('Hamit',"Mızrak");
+// console.log(returnData2);
+
+
+// Function Type
+//1-) Immedia Function
+//2-) Normal Function
+//3-) Anonymous Function
+//4-) Array Function
+
+//1-) Immedia Function
+//Immedia Function: Hemen Göster ve fonkisyonu çağırmamıza gerek yoktur.
+//Dikkat: Immedia öncesinde function olmaması gferekiyor
+(function () {
+    console.log("Immedia Function");
+})();
+
+//2-) Normal Function
+function normalFunction() {
+    console.log("normal Function");
 }
-returnsuzParametresiz();
+normalFunction();
 
-//2-) Returnsuz parametreli Function
-// parametre: fonksiyon oluştururken yazdığımız 
-
-function returnsuzParametreli(adi,soyadi) {
-    console.log("returnsuz Parametreli ==> "+adi+" "+soyadi)
+//3-) Anonymous Function
+let data = function () {
+    console.log("Anonymous Function");
 }
-// argüman: fonkisyonu çağırırken kullanırılır.
-returnsuzParametreli('Hamit',"Mızrak");
+data();
 
-
-//3-) Returnlu Parametresiz Function
-function returnluParametresiz() {
-    return "returnlu Parametresiz";
+//4-) Array Function
+let data2 = () => {
+    console.log("Arrow Function");
 }
-let returnData=returnluParametresiz();
-console.log(returnData);
+data2()
 
 
-//4-) Returnlu parametreli Function
-function returnluParametreli(adi,soyadi) {
-    return "returnlu Parametreli==> "+adi+" "+soyadi;
-}
-let returnData2=returnluParametreli('Hamit',"Mızrak");
-console.log(returnData2);
 
 
 
