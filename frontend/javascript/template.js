@@ -779,7 +779,7 @@ for (let i = 0; i < dizi2.length; i++) {
 }
   
 }
-// diziFunction3();
+//diziFunction3();
 
 
 // 2-) for In:(For Over Index) bize sayı numarasını verir verinin kendisini vermez
@@ -791,7 +791,7 @@ let diziFunction4=()=>{
      document.write( dizi2[temp]+" "+  temp+" ");
   }
   }
-// diziFunction4();
+//diziFunction4();
 
 // 3-) for Of:(for over member) bize verinin kendisini verir
 let diziFunction5=()=>{
@@ -801,7 +801,7 @@ let diziFunction5=()=>{
      document.write(number+" ") 
   }
   }
-  //diziFunction5();
+//diziFunction5();
 
   // 4-) forEach:
   // yazım şekli ==> dizi.forEach(function(value,index,array){}); 
@@ -815,11 +815,11 @@ let diziFunction5=()=>{
 dizi2.forEach(function(value){
 sum+=value;
 })
-document.writeln("<br/>"+sum);
+//document.writeln("<br/>"+sum);
 
 }
-diziFunction6();
-document.writeln("<br/>*************")
+//diziFunction6();
+//document.writeln("<br/>*************")
 
 // value,indis,array ==> normal
 let diziFunction7=()=>{
@@ -828,8 +828,8 @@ dizi3.forEach(function(value,index,array){
 document.writeln("<br/> Değer verisi: "+value+" index verisi: "+index+" array verisi: "+array);
 })
 }
-diziFunction7();
-document.writeln("<br/>*************")
+//diziFunction7();
+//document.writeln("<br/>*************")
 
 // value,indis,array ==> Interpolation
 let diziFunction8=()=>{
@@ -838,8 +838,34 @@ dizi3.forEach(function(value,index,array){
 document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array verisi: ${array}`);
 })
 }
-diziFunction8();
-document.writeln("<br/>*************")
+//diziFunction8();
+//document.writeln("<br/>*************")
+
+  ///////////////////////////////////////////////////
+  // Dizi fonksiyonlarını göreceğiz.
+  let diziFunction9=()=>{
+    const dizi=[11,66,77,22,33,44,55,88];
+    console.log(dizi);
+
+    //Dikkat: push ve pop , unshift ve shift'e göre daha hızlıdır.
+
+    //push ==> Sona 1 tane veri ==> EKLEMEK 
+    dizi.push(99);
+    console.log(dizi);
+
+    //unshift ==> Başa 1 tane veri ==>EKLEMEK 
+    dizi.unshift(10);
+    console.log(dizi);
+
+    //pop ==> Sondan 1 tane veri  ==>ÇIKARMAK 
+    dizi.pop();
+    console.log(dizi);
+
+    //shift ==> Baştan 1 tane veri  ==>ÇIKARMAK 
+    dizi.shift();
+    console.log(dizi);
+  }
+  diziFunction9()
 
   ///////////////////////////////////////////////////
 
