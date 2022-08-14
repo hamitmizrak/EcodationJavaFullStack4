@@ -949,7 +949,7 @@ document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array veri
 
 
 //////////////////
-//slice:
+// slice: Dilimleme demektir.
 // sıfırıncı indisten başlar
 // bize dizi döndürür
 // dizideki verdiğimiz indis numarasından itibaren diziyi kopyalar
