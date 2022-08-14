@@ -842,7 +842,9 @@ document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array veri
 //document.writeln("<br/>*************")
 
   ///////////////////////////////////////////////////
-  // Dizi fonksiyonlarını göreceğiz.
+  // Dizi fonksiyonlarını 
+  // Eklemek  ==> push()-unshift()
+  // Çıkarmak ==> pop()-shift()
   let diziFunction9=()=>{
     const dizi=[11,66,77,22,33,44,55,88];
     console.log(dizi);
@@ -865,7 +867,37 @@ document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array veri
     dizi.shift();
     console.log(dizi);
   }
-  diziFunction9()
+  //diziFunction9();
+
+  ////////////////
+
+    // Dizi fonksiyonlarını 
+  // sort()    ==> Küçükten büyüğe sıralamak
+  // reverse() ==> ters yazdırmak
+  // sort().reverse()==> Büyükten küçüğe sıralamak
+  let diziFunction10=()=>{
+    const dizi=[11,66,77,22,55,44,33,88];
+    console.log(dizi);
+
+    
+
+    //sort()    ==> Küçükten büyüğe sıralamak
+    dizi.sort()
+    console.log(dizi);
+
+    //reverse() ==> ters yazdırmak
+    dizi.reverse();
+    console.log(dizi);
+
+    //sort().reverse()==> Büyükten küçüğe sıralamak
+    dizi.sort().reverse();
+    console.log(dizi);
+
+    //shift ==> Baştan 1 tane veri  ==>ÇIKARMAK 
+    dizi.shift();
+    console.log(dizi);
+  }
+  diziFunction10();
 
   ///////////////////////////////////////////////////
 
