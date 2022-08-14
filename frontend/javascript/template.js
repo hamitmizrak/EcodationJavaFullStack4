@@ -968,8 +968,56 @@ document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array veri
         let dizi3=dizi1.slice(0,2);
         console.log(dizi3);
       }
- diziFunction13();
+ //diziFunction13();
 
+ //////////////////
+// splice: Eklemek
+// dizi elemanlarımıza veri eklemek ve/veya veri silmek için kullanıyoruz.
+// sıfırıncı indisten başlar
+// silinen veriyi döner
+let diziFunction14=()=>{
+    const dizi1=[11,22,33,44,55,66,77,88,99];
+    console.log(dizi1);
+
+    //sadece silmek
+    //ilgili indisten başlasın kaç tane sileceğini göstersin
+    //3: başlama indisi 
+    //1: silinecek adet sayısı
+    console.log(dizi1.splice(3,1));
+    console.log(dizi1);
+    //result: 44
+    //result: [11, 22, 33, 55, 66, 77, 88, 99]
+
+    //////////////
+    const dizi2=[1,2,3,4,5,6,7,8,9];
+    console.log(dizi2);
+
+    //Hem Silmek hem Eklemek
+    //ilgili indisten başlasın kaç tane sileceğini göstersin
+    //3: başlama indisi 
+    //1: silinecek adet sayısı
+    //Eklenecek veri: "Merhabalar"
+    console.log(dizi2.splice(3,1,"Merhabalar"));
+    console.log(dizi2);
+    //result: [1, 2, 3, 'Merhabalar', 5, 6, 7, 8, 9]
+
+    //////////////
+    const dizi3=[1,2,3,4,5,6,7,8,9];
+    console.log(dizi3);
+
+    //Hem Silmek hem Eklemek
+    //ilgili indisten başlasın kaç tane sileceğini göstersin
+    //1: başlama indisi 
+    //0: silinecek adet sayısı
+    //Eklenecek veri: "Merhabalar"
+    console.log(dizi3.splice(1,0,"Merhabalar"));
+    console.log(dizi3);
+    //result: [1, 'Merhabalar', 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+   
+  }
+diziFunction14();
 
 ///////////////////////////////////////////
 // Object
