@@ -638,30 +638,30 @@ let loopFunction = () => {
 
 ////////////////////////////////////////////
 //Date 
-let nowDateFunction=() => { 
-    let nowDate=new Date(2019,0,1,10,30,500);
+let nowDateFunction = () => {
+    let nowDate = new Date(2019, 0, 1, 10, 30, 500);
     nowDate.setHours(8);
     document.writeln(nowDate);
-    document.writeln("<br/>"+nowDate.getHours());
-    document.writeln("<br/>"+nowDate.getDate());
-    document.writeln("<br/>"+nowDate.getMilliseconds());
+    document.writeln("<br/>" + nowDate.getHours());
+    document.writeln("<br/>" + nowDate.getDate());
+    document.writeln("<br/>" + nowDate.getMilliseconds());
 }
 //nowDateFunction();
 
 ////////////////////////////////////////////
 //try-catch 
-let tryCatchFunction=() => { 
-try {
-    alertx("deneme");
-    console.log("1-Database.close()");
-} catch (error) {
-    console.log("Hata mesajı: "+error.message);
-    console.log("Hata mesajı adı: "+error.name);
-    console.log("Hata hepsi: "+error);
-    //console.log(error);
-} finally {
-    console.log("2-Database.close()");
-}
+let tryCatchFunction = () => {
+    try {
+        alertx("deneme");
+        console.log("1-Database.close()");
+    } catch (error) {
+        console.log("Hata mesajı: " + error.message);
+        console.log("Hata mesajı adı: " + error.name);
+        console.log("Hata hepsi: " + error);
+        //console.log(error);
+    } finally {
+        console.log("2-Database.close()");
+    }
 }
 //tryCatchFunction();
 
@@ -670,42 +670,53 @@ try {
 
 
 ///////////////////////////////////////////
+//NOT: örneklerimizi function,anonymous ve arrow function ile yapalım.
+//NOT: değişken olarak var,let,const kullanalım.
+
+//NOT: örneklerimizi function,anonymous ve arrow function ile yapalım.
+//NOT: değişken olarak var,let,const kullanalım.
+
 //Örnek-1
-//y=3x+4k ==> 1.dereceden 2 bilinmyenli denklem
-//Kullanıcı tarafından alınan x ve k değerlerini hesaplayan algoritma yazınız ?
+//y=3x+4k ==>1.dereceden2bilinmeyenlidenklem algoritması
+//Kullanıcı tarafından alınan x ve kdeğerlerini hesaplayan algoritma yazınız ?
 
 
 //örnek-2
 //Kullanıcı tarafından alınan dereceyi  Fahrenhayta çeviren algoritma yapalım.
-//(derece*9/5)+32
+//Formül: (derece*9/5)+32
 
-//örnek-3 operatör
+//örnek-3 operatör işlemleri: aşağıdaki örneği javascript ile yapalım
 //4+3*2(3:3-1*6+9:1+(3:3))
 
-//Örnek-4
-// -5.9
+//Örnek-4: Aşağıdaki örnekleri math ile çözelim ?
+// -5.9 sayıyının aşağıdaki işlemleri yaptıralım ?
 // 1-mutlak değeri alsın 5.9
 // 2-yuvarlama yapsın  6.0
 // 3-karesini alsın 36.00
-// 4-karekök alsın  6.0
+// 4-karekök alsın 6.0
 // 5-yuvarlama yapsın 6.0
 // 6-)çıkan sonucu 5 bölsün 6/5=1
 // 7-) iki sayı arasından karşılaştırma yapsın en küçüğünü alsın ve 1 ve 5
 // 8-) küçük sayı eğer tekse 3 eklesin çiftse 5 eklesin 
 
+// Örnek-5 : kullanıcı tarafından girilen bir sayıyı negatif mi pozitif mi olduğu ekran yazdıran algoritma ?
+//NOT: cast kullalım ?
 
-//Örnek-5 : kullanıcı tarafıadnan girilen bir sayıyı negatif mi pozitif mi 
+// Örnek-6 : kullanıcı tarafından password ve repassword alalım sonrasında bu iki değeri karşılaştırma yapalım
+//eğer aynı girilirse aynı veri yoksa birbirine uymadı yazan algoritma yapalım
 
-//Örnek-6  Haftanın günlerini bulan algoritma ? Function
-let weekInDay=()=>{
-    const nowDay=new Date().getDay();
+
+
+//Örnek-7  Haftanın günlerini bulan algoritma ? 
+let weekInDay = () => {
+    const nowDay = new Date().getDay();
     console.log(nowDay);
     try {
         switch (nowDay) {
             case 6:
                 console.log("cumartesi");
                 break;
-        
+
             default:
                 console.log("haftanın günleri dışında girildi")
                 break;
@@ -719,10 +730,10 @@ weekInDay()
 
 ///////////////////////////////////////////
 //FrontEnd
-// Diziler 
-// Object 
+// Diziler
+// Object
 // ES5-ES6
-// DOM 
+// DOM
 // jquery
 // Sıfırdan bir proje FrontEnd
 
