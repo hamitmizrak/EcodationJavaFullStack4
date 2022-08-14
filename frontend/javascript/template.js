@@ -1013,13 +1013,85 @@ let diziFunction14=()=>{
     console.log(dizi3.splice(1,0,"Merhabalar"));
     console.log(dizi3);
     //result: [1, 'Merhabalar', 2, 3, 4, 5, 6, 7, 8, 9]
-
-
-   
   }
-diziFunction14();
+//diziFunction14();
 
 ///////////////////////////////////////////
+  // 4-) forEach:
+  // yazım şekli ==> dizi.forEach(function(value,index,array){}); 
+  // value: o andaki dizi eleman değerleri, yazmak zorundayız.
+  // index: dizi eleman indisi ,yazmak zorunda değiliz.(optional)
+  // array: dizinin kendisidir ,yazmak zorunda değiliz.(optional)
+//sadece value
+let diziFunction15=()=>{
+
+    const dizi1=[2,4,6,8,10];
+    let sum=0;
+dizi1.forEach(function(value){
+sum+=value;
+});
+
+dizi1.forEach(function(value,index,array){
+document.writeln("<br/> Değer verisi: "+value+" index verisi: "+index+" array verisi: "+array);
+});
+
+dizi1.forEach(function(value,index,array){
+document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array verisi: ${array}`);
+})
+}
+//diziFunction15();
+
+//////////////////////////////////////////
+// Dizilerde Filter işlemi
+// dizi elemanlardaki koşulları sağlayan verileri çağırmak
+// dizi.filter(callback(value,index,array));
+// value: o andaki dizi eleman değerleri, yazmak zorundayız.
+// index: dizi eleman indisi ,yazmak zorunda değiliz.(optional)
+// array: dizinin kendisidir ,yazmak zorunda değiliz.(optional)
+// orijinal diziyi bozmuyor.
+// 
+
+// aşağıdaki dizi elemanlarından 44 ve üstünde büyük olanları listelemek ?
+//elemanlar: 11,22,33,44,55,66,77,88,99
+//global variable
+const dizi1=[11,22,33,44,55,66,77,88];
+let diziFunction16=()=>{
+    document.writeln("<br/>"+dizi1+"<br/>");
+
+    //iterative 
+    let tempArray=[];
+    for (let i = 0; i < dizi1.length; i++) {
+       if(dizi1[i]>=44){
+        tempArray[i]=dizi1[i];
+       }
+    }
+    for (const key in tempArray) {
+        document.writeln(tempArray[key]);
+    }
+
+    //Anonymous Function (ES5)
+  let anonymous=  dizi1.filter(function(value){
+        return value>=44;
+    });
+    document.writeln("<br/>"+anonymous);
+
+    //Arrow Function (ES6)
+    let arrow=  dizi1.filter((value)=>{
+        return value>=44;
+    });
+    document.writeln("<br/>"+arrow);
+
+  }
+diziFunction16();
+
+
+
+
+///////////////////////////////////////////
+// callback 
+// promise 
+// asyn await
+
 // Object
 // ES5-ES6
 // DOM
