@@ -779,7 +779,7 @@ for (let i = 0; i < dizi2.length; i++) {
 // diziFunction3();
 
 
-// 2-) for in: bize sayı numarasını verir verinin kendisini vermez
+// 2-) for In:(For Over Index) bize sayı numarasını verir verinin kendisini vermez
 // sadece indis numarasını verir
 let diziFunction4=()=>{
     const dizi2=diziFunction2();
@@ -790,7 +790,7 @@ let diziFunction4=()=>{
   }
 // diziFunction4();
 
-// 3-) for of: bize verinin kendisini verir
+// 3-) for Of:(for over member) bize verinin kendisini verir
 let diziFunction5=()=>{
     const dizi2=diziFunction2();
     console.log(dizi2);
