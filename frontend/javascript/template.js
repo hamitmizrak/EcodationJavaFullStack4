@@ -725,12 +725,91 @@ let weekInDay = () => {
         console.log(error)
     }
 }
-weekInDay()
+//weekInDay()
 
 
 ///////////////////////////////////////////
-//FrontEnd
-// Diziler
+// Diziler:
+// Verilerimizi bütün bir yapıda saklamaya yarar.
+// içine her türlü veri saklayabailiriz.
+// Verileri sıralı bir biçimde saklar
+// Sıfırıncı (0) indiste başlar.
+// diziler birer objedir.
+// dizilerde length kullanmak önemlidir
+// dizilerde ilk eleman ==> dizi[0]
+// dizilerde son eleman ==> dizi[dizi.length-1] 
+// let dizi=[]; //bu kullanım daha yaygındır.
+// let dizi2=new Array();
+
+//dizi 
+let diziFunction=()=>{
+let dizi=[];
+dizi[0]="Merhabalar";
+dizi[1]=44;
+dizi[2]=44.23;
+dizi[3]=true;
+
+console.log(dizi);
+console.log("ilk eleman ==>"+dizi[0]);
+console.log("son eleman ==>"+dizi[dizi.length-1]);
+document.write("<br/>son eleman ==>"+dizi[dizi.length-1]);
+}
+//diziFunction();
+let diziFunction2=function(){
+    //rastgele 5 tane sayı üreten bir eleman olsun 
+    let temp;
+    let dizi=[];
+    for(let i=0; i<5; i++){
+     temp=Math.round(Math.random(15)+1) ;
+     dizi[i]=temp;
+    }
+    return dizi;
+}
+//console.log(diziFunction2());
+
+//1-) iterative for 
+let diziFunction3=()=>{
+  const dizi2=diziFunction2();
+  console.log(dizi2);
+for (let i = 0; i < dizi2.length; i++) {
+   document.write(dizi2[i]+" ") 
+}
+  
+}
+// diziFunction3();
+
+
+// 2-) for in: bize sayı numarasını verir verinin kendisini vermez
+// sadece indis numarasını verir
+let diziFunction4=()=>{
+    const dizi2=diziFunction2();
+    console.log(dizi2);
+  for (let temp in dizi2) {
+     document.write( dizi2[temp]+" "+  temp+" ");
+  }
+  }
+// diziFunction4();
+
+// 3-) for of: bize verinin kendisini verir
+let diziFunction5=()=>{
+    const dizi2=diziFunction2();
+    console.log(dizi2);
+  for (let number of dizi2) {
+     document.write(number+" ") 
+  }
+  }
+  diziFunction5();
+
+  // 4-) forEach: 
+let diziFunction6=()=>{
+    const dizi2=diziFunction2();
+
+  }
+  //diziFunction6();
+
+
+
+///////////////////////////////////////////
 // Object
 // ES5-ES6
 // DOM
