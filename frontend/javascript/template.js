@@ -741,6 +741,7 @@ let weekInDay = () => {
 // let dizi=[]; //bu kullanım daha yaygındır.
 // let dizi2=new Array();
 
+///////////////////////////////////////////////////
 //dizi 
 let diziFunction=()=>{
 let dizi=[];
@@ -760,12 +761,14 @@ let diziFunction2=function(){
     let temp;
     let dizi=[];
     for(let i=0; i<5; i++){
-     temp=Math.round(Math.random(15)+1) ;
+     temp=Math.round(Math.random()*15+1) ;
      dizi[i]=temp;
     }
     return dizi;
 }
 //console.log(diziFunction2());
+
+///////////////////////////////////////////////////
 
 //1-) iterative for 
 let diziFunction3=()=>{
@@ -798,14 +801,47 @@ let diziFunction5=()=>{
      document.write(number+" ") 
   }
   }
-  diziFunction5();
+  //diziFunction5();
 
-  // 4-) forEach: 
-let diziFunction6=()=>{
-    const dizi2=diziFunction2();
+  // 4-) forEach:
+  // yazım şekli ==> dizi.forEach(function(value,index,array){}); 
+  // value: dizi eleman değerlei, yazmak zorundayız.
+  // index: dizi eleman indisi ,yazmak zorunda değiliz.(optional)
+  // array: dizinin kendisidir ,yazmak zorunda değiliz.(optional)
+//sadece value
+  let diziFunction6=()=>{
+    const dizi2=[2,4,6,8,10];
+    let sum=0;
+dizi2.forEach(function(value){
+sum+=value;
+})
+document.writeln("<br/>"+sum);
 
-  }
-  //diziFunction6();
+}
+diziFunction6();
+document.writeln("<br/>*************")
+
+// value,indis,array ==> normal
+let diziFunction7=()=>{
+    const dizi3=diziFunction2();
+dizi3.forEach(function(value,index,array){
+document.writeln("<br/> Değer verisi: "+value+" index verisi: "+index+" array verisi: "+array);
+})
+}
+diziFunction7();
+document.writeln("<br/>*************")
+
+// value,indis,array ==> Interpolation
+let diziFunction8=()=>{
+    const dizi3=diziFunction2();
+dizi3.forEach(function(value,index,array){
+document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array verisi: ${array}`);
+})
+}
+diziFunction8();
+document.writeln("<br/>*************")
+
+  ///////////////////////////////////////////////////
 
 
 
