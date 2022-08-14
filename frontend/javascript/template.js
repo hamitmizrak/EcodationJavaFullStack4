@@ -866,6 +866,12 @@ document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array veri
     //shift ==> Baştan 1 tane veri  ==>ÇIKARMAK 
     dizi.shift();
     console.log(dizi);
+
+    //delete: 
+    // indise sıfırdan başlar (0)
+    //dizide belirlediğimiz indis numarasında dizi indisindeki elemanı empty yapar
+    delete dizi[0];
+    console.log(dizi);
   }
   //diziFunction9();
 
@@ -878,8 +884,6 @@ document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array veri
   let diziFunction10=()=>{
     const dizi=[11,66,77,22,55,44,33,88];
     console.log(dizi);
-
-    
 
     //sort()    ==> Küçükten büyüğe sıralamak
     dizi.sort()
@@ -897,10 +901,74 @@ document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array veri
     dizi.shift();
     console.log(dizi);
   }
-  diziFunction10();
+  //diziFunction10();
 
   ///////////////////////////////////////////////////
+  //toString() join()
+  let diziFunction11=()=>{
+    const dizi=[11,true,77,"java",55,44,33,88];
+    console.log(dizi);
 
+    //toString() ==> diziyi String'e çeviriyor.
+    console.log(dizi.toString());
+    console.log(dizi.toString().toUpperCase());
+    console.log(typeof dizi.toString());
+
+    //join() ==> diziyi string'e çeviriyor. toString() farklı bizim istediğimiz bir simgeyle string'e çeviriyor.
+    console.log(dizi.join(''));
+    console.log(dizi.join('*'));
+    console.log(dizi.join(' - '));
+  }
+  //diziFunction11();
+
+    ///////////////////////////////////////////////////
+
+//birleştirmek
+// +
+//concat
+    let diziFunction12=()=>{
+        const dizi1=[11,22,33,44];
+        const dizi2=[55,66,77,88];
+        
+        //birleştirmek
+        // Artı(+) bize string bir bileşen oluşturur.
+        const dizi3=dizi1+dizi2;
+        console.log(dizi3);
+        console.log(typeof dizi3);
+
+        //concat: dizi eleman sonuna 1 tane veri eklemek
+        const dizi4=dizi1.concat('INC');
+        console.log(dizi4);
+
+        //concat: dizileri birleştirmek için kullanıyoruz.
+        const dizi5=dizi1.concat(dizi2);
+        console.log(dizi5);
+        console.log(typeof dizi5);
+      }
+      //diziFunction12();
+
+
+//////////////////
+//slice:
+// sıfırıncı indisten başlar
+// bize dizi döndürür
+// dizideki verdiğimiz indis numarasından itibaren diziyi kopyalar
+
+    let diziFunction13=()=>{
+        const dizi1=[11,22,33,44,55,66,77,88];
+        console.log(dizi1);
+
+        //2 inditen itibaren kopyadı
+        let dizi2=dizi1.slice(2);
+        console.log(dizi2);
+        console.log(typeof dizi1.slice(2));
+
+        // dizide aralık belirterek dizimi kopyadık
+        //0<= X <=2-1
+        let dizi3=dizi1.slice(0,2);
+        console.log(dizi3);
+      }
+ diziFunction13();
 
 
 ///////////////////////////////////////////
