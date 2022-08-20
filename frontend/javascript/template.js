@@ -1224,23 +1224,25 @@ let object1 = () => {
 
 let object2 = () => {
 
-    //OBJECT CREATE (Literal )
-    //object yazarken key:value olarak yazılır
+    // OBJECT CREATE (Literal )
+    // object yazarken key:value olarak yazılır.
+    // Dikkat:Object içindeki key'e ulaşmak için this keywordu kullanmalısınız.
+    // this: global değişkenlere erişmke için kullanırız.
     const person = {
         adi: "Hamit",//string
-        "soyadi":"Mızrak",//string
-        numara:1212,//number
-        isLogin:true,//boolean
-        hesCode:'hescode AXY1515',
-        jsTeknolojiler:['jquery','React',"Angular"],
-        javaTeknolojileri:{
-            adi:"JAVASE",
-            yıl:"1999"
-        }
+        "soyadi": "Mızrak",//string
+        numara: 1212,//number
+        isLogin: true,//boolean
+        hesCode: 'hescode AXY1515',
+        jsTeknolojiler: ['jquery', 'React', "Angular"],
+        javaTeknolojileri: {
+            adi: "JAVASE",
+            yıl: "1999"
+        },
     };
 
     //sonradan objeye veri eklemek
-    person.meslek="Bilgisayar Mühendisi";
+    person.meslek = "Bilgisayar Mühendisi";
 
     //CONSOLE LOG 
     console.log(person.meslek);
@@ -1250,12 +1252,35 @@ let object2 = () => {
     //diziler
     console.log(person.jsTeknolojiler);
     console.log(person.jsTeknolojiler[0]);
-    console.log(person.jsTeknolojiler[person.jsTeknolojiler.length-1]);
+    console.log(person.jsTeknolojiler[person.jsTeknolojiler.length - 1]);
     //nesne
     console.log(person.javaTeknolojileri);
     console.log(person.javaTeknolojileri.adi);
 }
-object2() 
+//object2();
+
+// Object Function
+// Dikkat:Object içindeki key'e ulaşmak için this keywordu kullanmalısınız.
+// this: global değişkenlere erişmke için kullanırız.
+let objectFunction = () => {
+    const person = {
+        adi: "Hamit",
+        "soyadi": "Mızrak",
+        //anonymous function
+        frontend: function () {
+            return this.adi.toUpperCase() + " " + this.soyadi;
+        },
+        //arrow function ve Template (Interpolation)
+        backend: function () {
+            return `${this.adi} ${this.soyadi}`;
+        }
+    };
+    //function
+    console.log(person.frontend());
+    console.log(person.backend());
+};
+//objectFunction();
+
 
 
 
