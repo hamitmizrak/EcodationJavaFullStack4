@@ -1117,8 +1117,8 @@ let diziFunction17 = () => {
 
     //Arrow Function (ES6) :value,index
     //Unutma : index Sıfırdan(0) başlar
-    let arrowValueIndex = dizi2.map((value,index) => {
-        return value * 2+index;
+    let arrowValueIndex = dizi2.map((value, index) => {
+        return value * 2 + index;
     });
     document.writeln("<br/>" + arrowValueIndex);
 }
@@ -1132,16 +1132,16 @@ let diziFunction17 = () => {
 // 4-) ExternalJS her zmana kapanış body tag öncesinde yazmalısın.
 let interpolation1 = () => {
 
-let data1="Merhabalar";
-document.writeln("<br/>" + data1);
+    let data1 = "Merhabalar";
+    document.writeln("<br/>" + data1);
 
-let data2='Merhabalar';
-document.writeln("<br/>" + data2);
+    let data2 = 'Merhabalar';
+    document.writeln("<br/>" + data2);
 
-let data3=`Merhabalar`;
-document.writeln("<br/>" + data3);
+    let data3 = `Merhabalar`;
+    document.writeln("<br/>" + data3);
 }
-interpolation1();
+//interpolation1();
 
 
 // Literal template üç yerde kullanıyoruz
@@ -1155,50 +1155,107 @@ interpolation1();
 //NOT: alt satır için: console.log()      ==> \n yazılır
 // A-) MultiLine (Çok satırlı)
 let multiLine = () => {
-    let normal="merhabalar\nnasılsınız";
+    let normal = "merhabalar\nnasılsınız";
     console.log(normal);
 
-    let multiline=`merhabalar
+    let multiline = `merhabalar
      nasılsınız`;
-     console.log(multiline);
+    console.log(multiline);
 }
-multiLine()
+//multiLine()
 
 
 // B-) Interpolation
- let registerName="Hamit";
- let registerSurname="Mızrak";
+let registerName = "Hamit";
+let registerSurname = "Mızrak";
 //NOT: JavaScript değişkenleri ${} ile gösterilir.
 let interpolation = () => {
     //1.YOL Normal JS
-    document.writeln("<br/>" +"ADI: "+ registerName+" SOYADI: " +registerSurname);
+    document.writeln("<br/>" + "ADI: " + registerName + " SOYADI: " + registerSurname);
 
     //2.YOL MultiLine
-    document.writeln("<br/>" + `ADI: ${registerName} SOYADI: ${registerSurname}` );
+    document.writeln("<br/>" + `ADI: ${registerName} SOYADI: ${registerSurname}`);
 }
-interpolation();
+//interpolation();
 
 // C-) Html Template
 // Dikkat: DOM için mutlaka external JS sona eklemelisin
 // NOT: JavaScript değişkenleri ${} ile gösterilir.
 let normalListHtml = () => {
-    const html="<ul>"+ "<li>" + registerName +"</li>"+"<li>" + registerSurname +"</li>"+"</ul>";
-    document.getElementById('normalHtml').innerHTML=html;
+    const html = "<ul>" + "<li>" + registerName + "</li>" + "<li>" + registerSurname + "</li>" + "</ul>";
+    document.getElementById('normalHtml').innerHTML = html;
 }
-normalListHtml();
+//normalListHtml();
 
 let templateHtml = () => {
-    const html=`
+    const html = `
     <ul>
         <li>${registerName}</li>
         <li>${registerSurname}</li>
     </ul> 
     `;
-    document.getElementById('templateHtml').innerHTML=html;
+    document.getElementById('templateHtml').innerHTML = html;
 }
-templateHtml();
+//templateHtml();
 
+//////////////////////////////////////////////////////////////////////////////////////
 
+// OBJECT: Gözümüzle veya anlamlandırabildiğimiz her şeye denir.
+// Object(Nesnelerin) özellikleri vardır.
+let object1 = () => {
+
+    //OBJECT
+    let objectData1 = {};
+    console.log(objectData1);
+    console.log(typeof objectData1);
+
+    let objectData2 = new Object;
+    console.log(objectData2);
+
+    //DİZİLER
+    let diziData1 = [];
+    console.log(diziData1);
+    console.log(typeof diziData1);
+
+    let diziData2 = new Array();
+    console.log(diziData2);
+}
+//object1();
+
+let object2 = () => {
+
+    //OBJECT CREATE (Literal )
+    //object yazarken key:value olarak yazılır
+    const person = {
+        adi: "Hamit",//string
+        "soyadi":"Mızrak",//string
+        numara:1212,//number
+        isLogin:true,//boolean
+        hesCode:'hescode AXY1515',
+        jsTeknolojiler:['jquery','React',"Angular"],
+        javaTeknolojileri:{
+            adi:"JAVASE",
+            yıl:"1999"
+        }
+    };
+
+    //sonradan objeye veri eklemek
+    person.meslek="Bilgisayar Mühendisi";
+
+    //CONSOLE LOG 
+    console.log(person.meslek);
+    console.log(person.adi);
+    console.log(typeof person.adi);
+    console.log(person.soyadi.toUpperCase());
+    //diziler
+    console.log(person.jsTeknolojiler);
+    console.log(person.jsTeknolojiler[0]);
+    console.log(person.jsTeknolojiler[person.jsTeknolojiler.length-1]);
+    //nesne
+    console.log(person.javaTeknolojileri);
+    console.log(person.javaTeknolojileri.adi);
+}
+object2() 
 
 
 
