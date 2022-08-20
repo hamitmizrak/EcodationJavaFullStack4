@@ -1313,9 +1313,30 @@ let object3 = () => {
     }
     //console.log(sumData)
 
-    
 }
-object3();
+//object3();
+
+
+/// Object Delete
+let object4 = () => {
+    //person object
+    const person = {
+        adi: "Hamit",
+        "soyadi": "Mızrak",
+        numara: 1212,
+        isLogin: true,
+    };
+
+    //delete
+    console.log(person.adi);
+    delete person.adi
+    console.log("Silmeden Sonra: " + person.adi);
+
+    //Objeye dışardan veri eklemek
+    person.data = "Veri tabanı"
+    console.log(person.data);
+}
+object4();
 
 
 
