@@ -743,26 +743,26 @@ let weekInDay = () => {
 
 ///////////////////////////////////////////////////
 //dizi 
-let diziFunction=()=>{
-let dizi=[];
-dizi[0]="Merhabalar";
-dizi[1]=44;
-dizi[2]=44.23;
-dizi[3]=true;
+let diziFunction = () => {
+    let dizi = [];
+    dizi[0] = "Merhabalar";
+    dizi[1] = 44;
+    dizi[2] = 44.23;
+    dizi[3] = true;
 
-console.log(dizi);
-console.log("ilk eleman ==>"+dizi[0]);
-console.log("son eleman ==>"+dizi[dizi.length-1]);
-document.write("<br/>son eleman ==>"+dizi[dizi.length-1]);
+    console.log(dizi);
+    console.log("ilk eleman ==>" + dizi[0]);
+    console.log("son eleman ==>" + dizi[dizi.length - 1]);
+    document.write("<br/>son eleman ==>" + dizi[dizi.length - 1]);
 }
 //diziFunction();
-let diziFunction2=function(){
+let diziFunction2 = function () {
     //rastgele 5 tane sayı üreten bir eleman olsun 
     let temp;
-    let dizi=[];
-    for(let i=0; i<5; i++){
-     temp=Math.round(Math.random()*15+1) ;
-     dizi[i]=temp;
+    let dizi = [];
+    for (let i = 0; i < 5; i++) {
+        temp = Math.round(Math.random() * 15 + 1);
+        dizi[i] = temp;
     }
     return dizi;
 }
@@ -771,82 +771,82 @@ let diziFunction2=function(){
 ///////////////////////////////////////////////////
 
 //1-) iterative for 
-let diziFunction3=()=>{
-  const dizi2=diziFunction2();
-  console.log(dizi2);
-for (let i = 0; i < dizi2.length; i++) {
-   document.write(dizi2[i]+" ") 
-}
-  
+let diziFunction3 = () => {
+    const dizi2 = diziFunction2();
+    console.log(dizi2);
+    for (let i = 0; i < dizi2.length; i++) {
+        document.write(dizi2[i] + " ")
+    }
+
 }
 //diziFunction3();
 
 
 // 2-) for In:(For Over Index) bize sayı numarasını verir verinin kendisini vermez
 // sadece indis numarasını verir
-let diziFunction4=()=>{
-    const dizi2=diziFunction2();
+let diziFunction4 = () => {
+    const dizi2 = diziFunction2();
     console.log(dizi2);
-  for (let temp in dizi2) {
-     document.write( dizi2[temp]+" "+  temp+" ");
-  }
-  }
+    for (let temp in dizi2) {
+        document.write(dizi2[temp] + " " + temp + " ");
+    }
+}
 //diziFunction4();
 
 // 3-) for Of:(for over member) bize verinin kendisini verir
-let diziFunction5=()=>{
-    const dizi2=diziFunction2();
+let diziFunction5 = () => {
+    const dizi2 = diziFunction2();
     console.log(dizi2);
-  for (let number of dizi2) {
-     document.write(number+" ") 
-  }
-  }
+    for (let number of dizi2) {
+        document.write(number + " ")
+    }
+}
 //diziFunction5();
 
-  // 4-) forEach:
-  // yazım şekli ==> dizi.forEach(function(value,index,array){}); 
-  // value: dizi eleman değerlei, yazmak zorundayız.
-  // index: dizi eleman indisi ,yazmak zorunda değiliz.(optional)
-  // array: dizinin kendisidir ,yazmak zorunda değiliz.(optional)
+// 4-) forEach:
+// yazım şekli ==> dizi.forEach(function(value,index,array){}); 
+// value: dizi eleman değerlei, yazmak zorundayız.
+// index: dizi eleman indisi ,yazmak zorunda değiliz.(optional)
+// array: dizinin kendisidir ,yazmak zorunda değiliz.(optional)
 //sadece value
-  let diziFunction6=()=>{
-    const dizi2=[2,4,6,8,10];
-    let sum=0;
-dizi2.forEach(function(value){
-sum+=value;
-})
-//document.writeln("<br/>"+sum);
+let diziFunction6 = () => {
+    const dizi2 = [2, 4, 6, 8, 10];
+    let sum = 0;
+    dizi2.forEach(function (value) {
+        sum += value;
+    })
+    //document.writeln("<br/>"+sum);
 
 }
 //diziFunction6();
 //document.writeln("<br/>*************")
 
 // value,indis,array ==> normal
-let diziFunction7=()=>{
-    const dizi3=diziFunction2();
-dizi3.forEach(function(value,index,array){
-document.writeln("<br/> Değer verisi: "+value+" index verisi: "+index+" array verisi: "+array);
-})
+let diziFunction7 = () => {
+    const dizi3 = diziFunction2();
+    dizi3.forEach(function (value, index, array) {
+        document.writeln("<br/> Değer verisi: " + value + " index verisi: " + index + " array verisi: " + array);
+    })
 }
 //diziFunction7();
 //document.writeln("<br/>*************")
 
 // value,indis,array ==> Interpolation
-let diziFunction8=()=>{
-    const dizi3=diziFunction2();
-dizi3.forEach(function(value,index,array){
-document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array verisi: ${array}`);
-})
+let diziFunction8 = () => {
+    const dizi3 = diziFunction2();
+    dizi3.forEach(function (value, index, array) {
+        document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array verisi: ${array}`);
+    })
 }
 //diziFunction8();
 //document.writeln("<br/>*************")
 
-  ///////////////////////////////////////////////////
-  // Dizi fonksiyonlarını 
-  // Eklemek  ==> push()-unshift()
-  // Çıkarmak ==> pop()-shift()
-  let diziFunction9=()=>{
-    const dizi=[11,66,77,22,33,44,55,88];
+///////////////////////////////////////////////////
+// Dizi fonksiyonlarını 
+// Eklemek  ==> push()-unshift()
+// Çıkarmak ==> pop()-shift()
+let diziFunction9 = () => {
+    const dizi = [11, 66, 77, 22, 33, 44, 55, 88];
     console.log(dizi);
 
     //Dikkat: push ve pop , unshift ve shift'e göre daha hızlıdır.
@@ -872,17 +872,17 @@ document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array veri
     //dizide belirlediğimiz indis numarasında dizi indisindeki elemanı empty yapar
     delete dizi[0];
     console.log(dizi);
-  }
-  //diziFunction9();
+}
+//diziFunction9();
 
-  ////////////////
+////////////////
 
-    // Dizi fonksiyonlarını 
-  // sort()    ==> Küçükten büyüğe sıralamak
-  // reverse() ==> ters yazdırmak
-  // sort().reverse()==> Büyükten küçüğe sıralamak
-  let diziFunction10=()=>{
-    const dizi=[11,66,77,22,55,44,33,88];
+// Dizi fonksiyonlarını 
+// sort()    ==> Küçükten büyüğe sıralamak
+// reverse() ==> ters yazdırmak
+// sort().reverse()==> Büyükten küçüğe sıralamak
+let diziFunction10 = () => {
+    const dizi = [11, 66, 77, 22, 55, 44, 33, 88];
     console.log(dizi);
 
     //sort()    ==> Küçükten büyüğe sıralamak
@@ -900,13 +900,13 @@ document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array veri
     //shift ==> Baştan 1 tane veri  ==>ÇIKARMAK 
     dizi.shift();
     console.log(dizi);
-  }
-  //diziFunction10();
+}
+//diziFunction10();
 
-  ///////////////////////////////////////////////////
-  //toString() join()
-  let diziFunction11=()=>{
-    const dizi=[11,true,77,"java",55,44,33,88];
+///////////////////////////////////////////////////
+//toString() join()
+let diziFunction11 = () => {
+    const dizi = [11, true, 77, "java", 55, 44, 33, 88];
     console.log(dizi);
 
     //toString() ==> diziyi String'e çeviriyor.
@@ -918,34 +918,34 @@ document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array veri
     console.log(dizi.join(''));
     console.log(dizi.join('*'));
     console.log(dizi.join(' - '));
-  }
-  //diziFunction11();
+}
+//diziFunction11();
 
-    ///////////////////////////////////////////////////
+///////////////////////////////////////////////////
 
 //birleştirmek
 // +
 //concat
-    let diziFunction12=()=>{
-        const dizi1=[11,22,33,44];
-        const dizi2=[55,66,77,88];
-        
-        //birleştirmek
-        // Artı(+) bize string bir bileşen oluşturur.
-        const dizi3=dizi1+dizi2;
-        console.log(dizi3);
-        console.log(typeof dizi3);
+let diziFunction12 = () => {
+    const dizi1 = [11, 22, 33, 44];
+    const dizi2 = [55, 66, 77, 88];
 
-        //concat: dizi eleman sonuna 1 tane veri eklemek
-        const dizi4=dizi1.concat('INC');
-        console.log(dizi4);
+    //birleştirmek
+    // Artı(+) bize string bir bileşen oluşturur.
+    const dizi3 = dizi1 + dizi2;
+    console.log(dizi3);
+    console.log(typeof dizi3);
 
-        //concat: dizileri birleştirmek için kullanıyoruz.
-        const dizi5=dizi1.concat(dizi2);
-        console.log(dizi5);
-        console.log(typeof dizi5);
-      }
-      //diziFunction12();
+    //concat: dizi eleman sonuna 1 tane veri eklemek
+    const dizi4 = dizi1.concat('INC');
+    console.log(dizi4);
+
+    //concat: dizileri birleştirmek için kullanıyoruz.
+    const dizi5 = dizi1.concat(dizi2);
+    console.log(dizi5);
+    console.log(typeof dizi5);
+}
+//diziFunction12();
 
 
 //////////////////
@@ -954,42 +954,42 @@ document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array veri
 // bize dizi döndürür
 // dizideki verdiğimiz indis numarasından itibaren diziyi kopyalar
 
-    let diziFunction13=()=>{
-        const dizi1=[11,22,33,44,55,66,77,88];
-        console.log(dizi1);
+let diziFunction13 = () => {
+    const dizi1 = [11, 22, 33, 44, 55, 66, 77, 88];
+    console.log(dizi1);
 
-        //2 inditen itibaren kopyadı
-        let dizi2=dizi1.slice(2);
-        console.log(dizi2);
-        console.log(typeof dizi1.slice(2));
+    //2 inditen itibaren kopyadı
+    let dizi2 = dizi1.slice(2);
+    console.log(dizi2);
+    console.log(typeof dizi1.slice(2));
 
-        // dizide aralık belirterek dizimi kopyadık
-        //0<= X <=2-1
-        let dizi3=dizi1.slice(0,2);
-        console.log(dizi3);
-      }
- //diziFunction13();
+    // dizide aralık belirterek dizimi kopyadık
+    //0<= X <=2-1
+    let dizi3 = dizi1.slice(0, 2);
+    console.log(dizi3);
+}
+//diziFunction13();
 
- //////////////////
+//////////////////
 // splice: Eklemek
 // dizi elemanlarımıza veri eklemek ve/veya veri silmek için kullanıyoruz.
 // sıfırıncı indisten başlar
 // silinen veriyi döner
-let diziFunction14=()=>{
-    const dizi1=[11,22,33,44,55,66,77,88,99];
+let diziFunction14 = () => {
+    const dizi1 = [11, 22, 33, 44, 55, 66, 77, 88, 99];
     console.log(dizi1);
 
     //sadece silmek
     //ilgili indisten başlasın kaç tane sileceğini göstersin
     //3: başlama indisi 
     //1: silinecek adet sayısı
-    console.log(dizi1.splice(3,1));
+    console.log(dizi1.splice(3, 1));
     console.log(dizi1);
     //result: 44
     //result: [11, 22, 33, 55, 66, 77, 88, 99]
 
     //////////////
-    const dizi2=[1,2,3,4,5,6,7,8,9];
+    const dizi2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     console.log(dizi2);
 
     //Hem Silmek hem Eklemek
@@ -997,12 +997,12 @@ let diziFunction14=()=>{
     //3: başlama indisi 
     //1: silinecek adet sayısı
     //Eklenecek veri: "Merhabalar"
-    console.log(dizi2.splice(3,1,"Merhabalar"));
+    console.log(dizi2.splice(3, 1, "Merhabalar"));
     console.log(dizi2);
     //result: [1, 2, 3, 'Merhabalar', 5, 6, 7, 8, 9]
 
     //////////////
-    const dizi3=[1,2,3,4,5,6,7,8,9];
+    const dizi3 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     console.log(dizi3);
 
     //Hem Silmek hem Eklemek
@@ -1010,34 +1010,34 @@ let diziFunction14=()=>{
     //1: başlama indisi 
     //0: silinecek adet sayısı
     //Eklenecek veri: "Merhabalar"
-    console.log(dizi3.splice(1,0,"Merhabalar"));
+    console.log(dizi3.splice(1, 0, "Merhabalar"));
     console.log(dizi3);
     //result: [1, 'Merhabalar', 2, 3, 4, 5, 6, 7, 8, 9]
-  }
+}
 //diziFunction14();
 
 ///////////////////////////////////////////
-  // 4-) forEach:
-  // yazım şekli ==> dizi.forEach(function(value,index,array){}); 
-  // value: o andaki dizi eleman değerleri, yazmak zorundayız.
-  // index: dizi eleman indisi ,yazmak zorunda değiliz.(optional)
-  // array: dizinin kendisidir ,yazmak zorunda değiliz.(optional)
+// 4-) forEach:
+// yazım şekli ==> dizi.forEach(function(value,index,array){}); 
+// value: o andaki dizi eleman değerleri, yazmak zorundayız.
+// index: dizi eleman indisi ,yazmak zorunda değiliz.(optional)
+// array: dizinin kendisidir ,yazmak zorunda değiliz.(optional)
 //sadece value
-let diziFunction15=()=>{
+let diziFunction15 = () => {
 
-    const dizi1=[2,4,6,8,10];
-    let sum=0;
-dizi1.forEach(function(value){
-sum+=value;
-});
+    const dizi1 = [2, 4, 6, 8, 10];
+    let sum = 0;
+    dizi1.forEach(function (value) {
+        sum += value;
+    });
 
-dizi1.forEach(function(value,index,array){
-document.writeln("<br/> Değer verisi: "+value+" index verisi: "+index+" array verisi: "+array);
-});
+    dizi1.forEach(function (value, index, array) {
+        document.writeln("<br/> Değer verisi: " + value + " index verisi: " + index + " array verisi: " + array);
+    });
 
-dizi1.forEach(function(value,index,array){
-document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array verisi: ${array}`);
-})
+    dizi1.forEach(function (value, index, array) {
+        document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array verisi: ${array}`);
+    })
 }
 //diziFunction15();
 
@@ -1054,42 +1054,82 @@ document.writeln(`<br/>Değer verisi: ${value} index verisi: ${index} array veri
 // aşağıdaki dizi elemanlarından 44 ve üstünde büyük olanları listelemek ?
 //elemanlar: 11,22,33,44,55,66,77,88,99
 //global variable
-const dizi1=[11,22,33,44,55,66,77,88];
-let diziFunction16=()=>{
-    document.writeln("<br/>"+dizi1+"<br/>");
+//const dizi1=[11,22,33,44,55,66,77,88];
+let diziFunction16 = () => {
+    document.writeln("<br/>" + dizi1 + "<br/>");
 
     //iterative 
-    let tempArray=[];
+    let tempArray = [];
     for (let i = 0; i < dizi1.length; i++) {
-       if(dizi1[i]>=44){
-        tempArray[i]=dizi1[i];
-       }
+        if (dizi1[i] >= 44) {
+            tempArray[i] = dizi1[i];
+        }
     }
     for (const key in tempArray) {
         document.writeln(tempArray[key]);
     }
 
     //Anonymous Function (ES5)
-  let anonymous=  dizi1.filter(function(value){
-        return value>=44;
+    let anonymous = dizi1.filter(function (value) {
+        return value >= 44;
     });
-    document.writeln("<br/>"+anonymous);
+    document.writeln("<br/>" + anonymous);
 
     //Arrow Function (ES6)
-    let arrow=  dizi1.filter((value)=>{
-        return value>=44;
+    let arrow = dizi1.filter((value) => {
+        return value >= 44;
     });
-    document.writeln("<br/>"+arrow);
+    document.writeln("<br/>" + arrow);
 
-  }
-diziFunction16();
+}
+//diziFunction16();
 
+
+//////////////////////////////////////////
+// Dizilerde Map işlemi
+// dizi elemanlardaki her bir dataya erişmek ve bu datalar üzerinde işlem yapabilmek yeteneğine sahiptir.
+// map ile işlediğimiz verilerde bize değişime uğramış diziler döner
+// dizi.map(callback(value,index,array));
+// value: o andaki dizi eleman değerleri, yazmak zorundayız.
+// index: dizi eleman indisi ,yazmak zorunda değiliz.(optional)
+// array: dizinin kendisidir ,yazmak zorunda değiliz.(optional)
+// orijinal diziyi bozmuyor.
+//
+
+// aşağıdaki dizi elemanların herbirini 2 ile çarpması elde edelim.
+// elemanlar: 11,22,33,44,55,66,77,88,99
+// global variable
+const dizi2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let diziFunction17 = () => {
+
+    //Anonymous Function (ES5): value
+    let anonymousValue = dizi2.map(function (value) {
+        return value * 2;
+    });
+    document.writeln("<br/>" + anonymousValue);
+
+    //Arrow Function (ES6) :value
+    let arrowValue = dizi2.map((value) => {
+        return value * 2;
+    });
+    document.writeln("<br/>" + arrowValue);
+
+
+    //Arrow Function (ES6) :value,index
+    //Unutma : index Sıfırdan(0) başlar
+    let arrowValueIndex = dizi2.map((value,index) => {
+        return value * 2+index;
+    });
+    document.writeln("<br/>" + arrowValueIndex);
+}
+
+diziFunction17();
 
 
 
 ///////////////////////////////////////////
-// callback 
-// promise 
+// callback
+// promise
 // asyn await
 
 // Object
