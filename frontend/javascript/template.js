@@ -1129,6 +1129,7 @@ let diziFunction17 = () => {
 // 1-) String verilerimizi daha okunalıklı ve daha yazılabilir olması için kullanıyoruz.
 // 2-) JavaScript'te ===>Tek tırnak(' ') veya çift tırnak(" ") kullanabiliriz.
 // 3-) Template Literal : ==> Backtick kullanmalısın ``
+// 4-) ExternalJS her zmana kapanış body tag öncesinde yazmalısın.
 let interpolation1 = () => {
 
 let data1="Merhabalar";
@@ -1140,7 +1141,7 @@ document.writeln("<br/>" + data2);
 let data3=`Merhabalar`;
 document.writeln("<br/>" + data3);
 }
-//interpolation1();
+interpolation1();
 
 
 // Literal template üç yerde kullanıyoruz
@@ -1150,11 +1151,12 @@ document.writeln("<br/>" + data3);
 // C-) Html Template
 
 
-
+//NOT: alt satır için: document.writeln() ==> <br/> yazılır
+//NOT: alt satır için: console.log()      ==> \n yazılır
 // A-) MultiLine (Çok satırlı)
 let multiLine = () => {
-    let normal="merhabalar"+"<br/>"+  "nasılsınız";
-    console.log(normal+"<br/>");
+    let normal="merhabalar\nnasılsınız";
+    console.log(normal);
 
     let multiline=`merhabalar
      nasılsınız`;
