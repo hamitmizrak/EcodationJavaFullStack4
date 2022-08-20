@@ -1336,9 +1336,32 @@ let object4 = () => {
     person.data = "Veri tabanı"
     console.log(person.data);
 }
-object4();
+//object4();
+///////////////////////////////////////////
+// Constructorla uğraşıyorsak: this ve new keywordlerini kullanmamız gerekiyor.
+// Constructor: JavaScriptte Class yapısı yoktur.
+// JavaScript'te: Class yapısı yerine fonksiyonlar kullanılır.
+// Class gibi kullanabilmesi için constructor yazmalıyız.
+// Constructor için fonksiyonlarda this keywordunu kullanmamız gerekiyor.
+let object5Constructor = () => {
+    //Class gibi kullanabilemem için function yazmamız gerekiyor.
+    //argümanları mutlaka this ile bağlamamız gerekiyor.
+    let StudentAnonymous = function (adi, soyadi, sayi) {
+        this.adi = adi;
+        this.soyadi = soyadi;
+        this.sayi = sayi;
+        console.log(this);
+        this.power = () => { return sayi * sayi; }
+    }
 
-
+    // function new keywordunuc kullanmak
+    // OOP new anahtarı hafızada yeni bir yer açmak içindir.
+    let result = new StudentAnonymous("Hamit", 'Mızrak', 4);
+    console.log(result.adi);
+    //dikkat: Fonksiyonlarda  () yazmayı unutma:
+    console.log(result.power());
+};
+object5Constructor();
 
 ///////////////////////////////////////////
 // callback
