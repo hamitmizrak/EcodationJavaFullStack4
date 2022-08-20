@@ -1122,8 +1122,82 @@ let diziFunction17 = () => {
     });
     document.writeln("<br/>" + arrowValueIndex);
 }
+//diziFunction17();
 
-diziFunction17();
+///////////////////////////////////////////
+//Template Literal:
+// 1-) String verilerimizi daha okunalıklı ve daha yazılabilir olması için kullanıyoruz.
+// 2-) JavaScript'te ===>Tek tırnak(' ') veya çift tırnak(" ") kullanabiliriz.
+// 3-) Template Literal : ==> Backtick kullanmalısın ``
+let interpolation1 = () => {
+
+let data1="Merhabalar";
+document.writeln("<br/>" + data1);
+
+let data2='Merhabalar';
+document.writeln("<br/>" + data2);
+
+let data3=`Merhabalar`;
+document.writeln("<br/>" + data3);
+}
+//interpolation1();
+
+
+// Literal template üç yerde kullanıyoruz
+// UNUTMAAAA: BackTick yazmayı UNUTMAAAA
+// A-) MultiLine (Çok satırlı) 
+// B-) Interpolation
+// C-) Html Template
+
+
+
+// A-) MultiLine (Çok satırlı)
+let multiLine = () => {
+    let normal="merhabalar"+"<br/>"+  "nasılsınız";
+    console.log(normal+"<br/>");
+
+    let multiline=`merhabalar
+     nasılsınız`;
+     console.log(multiline);
+}
+multiLine()
+
+
+// B-) Interpolation
+ let registerName="Hamit";
+ let registerSurname="Mızrak";
+//NOT: JavaScript değişkenleri ${} ile gösterilir.
+let interpolation = () => {
+    //1.YOL Normal JS
+    document.writeln("<br/>" +"ADI: "+ registerName+" SOYADI: " +registerSurname);
+
+    //2.YOL MultiLine
+    document.writeln("<br/>" + `ADI: ${registerName} SOYADI: ${registerSurname}` );
+}
+interpolation();
+
+// C-) Html Template
+// Dikkat: DOM için mutlaka external JS sona eklemelisin
+// NOT: JavaScript değişkenleri ${} ile gösterilir.
+let normalListHtml = () => {
+    const html="<ul>"+ "<li>" + registerName +"</li>"+"<li>" + registerSurname +"</li>"+"</ul>";
+    document.getElementById('normalHtml').innerHTML=html;
+}
+normalListHtml();
+
+let templateHtml = () => {
+    const html=`
+    <ul>
+        <li>${registerName}</li>
+        <li>${registerSurname}</li>
+    </ul> 
+    `;
+    document.getElementById('templateHtml').innerHTML=html;
+}
+templateHtml();
+
+
+
 
 
 
