@@ -1281,7 +1281,41 @@ let objectFunction = () => {
 };
 //objectFunction();
 
+/// Object ekranda döngüyle yazalım
+let object3 = () => {
+    //person object
+    const person = {
+        adi: "Hamit",//string
+        "soyadi": "Mızrak",//string
+        numara: 1212,//number
+        isLogin: true,//boolean
+        hesCode: 'hescode AXY1515',
+        jsTeknolojiler: ['jquery', 'React', "Angular"],
+        javaTeknolojileri: {
+            adi: "JAVASE",
+            yıl: "1999"
+        },
+    };
 
+    //object erişim yolları
+    //1.YOL Nokta 
+    //2.YOL object dizi elemanı
+    console.log(person.adi);
+    console.log(person["adi"]);
+    console.log(person.javaTeknolojileri);
+    console.log(person.javaTeknolojileri.adi);
+    console.log(person["javaTeknolojileri"]["adi"]);
+
+    //Loop (for in)
+    let sumData = " ";
+    for (let temp in person) {
+        sumData += person[temp];
+    }
+    //console.log(sumData)
+
+    
+}
+object3();
 
 
 
