@@ -1343,6 +1343,8 @@ let object4 = () => {
 // JavaScript'te: Class yapısı yerine fonksiyonlar kullanılır.
 // Class gibi kullanabilmesi için constructor yazmalıyız.
 // Constructor için fonksiyonlarda this keywordunu kullanmamız gerekiyor.
+// Prototype(prototip): JavaScripte Kalıtımı (Inheritance) yapısının temelidir.
+
 let object5Constructor = () => {
     //Class gibi kullanabilemem için function yazmamız gerekiyor.
     //argümanları mutlaka this ile bağlamamız gerekiyor.
@@ -1361,7 +1363,63 @@ let object5Constructor = () => {
     //dikkat: Fonksiyonlarda  () yazmayı unutma:
     console.log(result.power());
 };
-object5Constructor();
+//object5Constructor();
+
+///////////////////////////////////////////
+let object6Stringify = () => {
+
+    const person = {
+        "adi": "Hamit",
+        "soyadi": "Mızrak",
+        "sayi": 50,
+        "computer enginer": true,
+        "javaee": ["servlet", "jsp", "jsf"],
+        "java": {
+            "name": "javase",
+            "version": "18"
+        }
+    }
+    //1.SORU: Adı
+    //1.YOL
+    console.log(person.adi);
+
+    //2.YOL
+    console.log(person["adi"]);
+
+    //3.YOL
+    let sumData = " ";
+    for (let temp in person) {
+        sumData += person[temp];
+    }
+    console.log(sumData.substring(0, 6).trim());
+
+    //4.YOL: json objesini String'e çevirmek
+    let jsonToString = JSON.stringify(person);
+    //console.log(jsonToString);
+
+    //4-A
+    console.log(jsonToString.substring(8, 13));
+
+    //4-B
+    const data = jsonToString.indexOf("Hamit");
+    console.log(jsonToString.substring(data, 13));
+    console.log(jsonToString.substring(data, data + 5));
+
+    //4-C
+    const jsonToString2 = JSON.stringify(person);
+    const parse2 = JSON.parse(jsonToString2);
+    let name1 = parse2.adi;
+    console.log(name1);
+
+    //4-D
+    const name2 = JSON.parse(JSON.stringify(person)).adi;
+    console.log(name2);
+
+    //4-E
+    console.log(JSON.parse(JSON.stringify(person)).adi);
+
+}
+object6Stringify();
 
 ///////////////////////////////////////////
 // callback
