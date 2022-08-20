@@ -1417,7 +1417,6 @@ let object6Stringify = () => {
 
     //4-E
     console.log(JSON.parse(JSON.stringify(person)).adi);
-
 }
 object6Stringify();
 
