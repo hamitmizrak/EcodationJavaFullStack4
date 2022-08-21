@@ -1448,40 +1448,45 @@ let object7This= () => {
 
 //1.YÖNTEM PARAMETRESIZ
 //FONKSIYON
-let callApplyBindFunctionWithoutParam= function(){
-    document.writeln(`Merhabalar: ${this.adi} <br/>`);
-}
+// let callApplyBindFunctionWithoutParam= function(){
+//     document.writeln(`Merhabalar: ${this.adi} <br/>`);
+// }
 //objeye bağlamak: call ile apply parametresizde kullanımları aynı
 // bind ise bize bir değer döndermek için bir fonksiyonda yazmamız gerekir.
 //OBJECT
-let objectData1={adi:'Hamit'};
+// let objectData1={adi:'Hamit'};
 
-callApplyBindFunctionWithoutParam.call(objectData1);
+// callApplyBindFunctionWithoutParam.call(objectData1);
 
-callApplyBindFunctionWithoutParam.apply(objectData1);
+// callApplyBindFunctionWithoutParam.apply(objectData1);
 
-let newBindFuctionWithoutParam=callApplyBindFunctionWithoutParam.bind(objectData1);
-newBindFuctionWithoutParam();
+// let newBindFuctionWithoutParam=callApplyBindFunctionWithoutParam.bind(objectData1);
+// newBindFuctionWithoutParam();
 
-document.writeln(`**********************<br/>`)
+// document.writeln(`**********************<br/>`)
 
 ///////////////////////////////////////////////////////////////////////////
 //2.YÖNTEM PARAMETRELI 
 //parametrelide call ile apply arasındaki fark [] yazmak veya yazmamak
 //FONKSIYON
-let callApplyBindFunctionParam= function(x,y){
-    document.writeln(`Merhabalar: ${this.adi} X:${x} Y:${y}<br/>`);
+// let callApplyBindFunctionParam= function(x,y){
+//     document.writeln(`Merhabalar: ${this.adi} X:${x} Y:${y}<br/>`);
+// }
+
+// let objectData2={adi:'Hamit'}; 
+
+// callApplyBindFunctionParam.call(objectData2,'Java',"nodejs");
+
+// //apply'da veriler dizi içinde gösterilir
+// callApplyBindFunctionParam.apply(objectData2,['Java',"nodejs"]);
+
+// let newBindFuctionParam=callApplyBindFunctionParam.bind(objectData2,'Java',"nodejs");
+// newBindFuctionParam();
+///////////////////////////////////////////
+let sum=()=>{
+
+    console.log("Merhabalar")
 }
-
-let objectData2={adi:'Hamit'}; 
-
-callApplyBindFunctionParam.call(objectData2,'Java',"nodejs");
-
-//apply'da veriler dizi içinde gösterilir
-callApplyBindFunctionParam.apply(objectData2,['Java',"nodejs"]);
-
-let newBindFuctionParam=callApplyBindFunctionParam.bind(objectData2,'Java',"nodejs");
-newBindFuctionParam();
 
 
 ///////////////////////////////////////////
