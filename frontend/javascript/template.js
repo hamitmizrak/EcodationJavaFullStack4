@@ -1496,8 +1496,15 @@ function parag() {
     //document.getElementById("p_id").innerText="<b>Değişti</b>";
     //document.getElementsByClassName("p_class")[0].innerHTML="<b>Değişti</b>";
     //document.getElementsByName("p_name")[0].innerHTML="<b>Değişti</b>";
-    document.getElementsByTagName("p")[0].innerHTML = "<b>Değişti</b>";
+    let result = document.getElementsByTagName("p")[0];
+    result.innerHTML = "<b>Değişti</b>";
+    result.style.color="white";
+    result.style.backgroundColor="black";
+    result.style.padding="2rem";
 }
+
+let result2=document.getElementById("listener_id");
+result2.addEventListener("click",function(){ alert("h1 tıklandı")},false);
 
 ///////////////////////////////////////////
 // callback
