@@ -18,18 +18,93 @@
     <!-- jquery  -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<style>
+    .inputContainer i {
+        position: absolute;
+    }
+
+    .icon {
+        padding: 1rem;
+        color: rgb(98, 0, 255);
+        width: 3rem;
+        text-align: left;
+    }
+
+    .iconInput {
+        width: 100%;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        padding: .3rem;
+    }
+</style>
 </head>
 
-<body class="bg-dark text-warning container row">
-<!-- start codes -->
+<body class="bg-dark text-white">
+    <!-- start codes -->
 
-<h4 class="text-center">Register</h4>
+    <h4 class="text-center">Register</h4>
+    <p class="text-center">Fill out this form</p>
+    <!-- form input value-->
+    <form action="#" method="get" name="form_data" id="form_data">
+        <div class="container">
+            <div class="row">
+                <div class="inputContainer col-md-6 mb-2">
+                    <input class="iconInput" type="text" placeholder="First Name" id="first_name" name="first_name"
+                        autofocus />
+                </div>
+                <div class="inputContainer  col-md-6 mb-2 ">
+                    <input class="iconInput" type="text" placeholder="Last Name" id="last_name" name="last_name" />
+                </div>
+                <div class="inputContainer  col-md-12 mb-2">
+                    <i class="fa fa-user icon"> </i>
+                    <input class="iconInput" type="text" placeholder="Username " id="username" name="username" />
+                </div>
+                <div class=" inputContainer col-md-12 mb-2">
+                    <i class="fa fa-envelope icon"> </i>
+                    <input class="iconInput" type="email" placeholder="Email Address" id="email" name="email" />
+                </div>
+                <div class=" inputContainer col-md-12 mb-2">
+                    <i class="fa fa-key icon"> </i>
+                    <input class="iconInput" type="password" placeholder="Password" id="password" name="password" />
+                </div>
+                <div class="inputContainer  col-md-12 mb-2 mt-2">
+                    <input class="form-check-input" type="checkbox" id="aggree" name="aggree">
+                    <label class="form-check-label" for="aggree">I aggree with the Terms and Conditions and the Privacy
+                        Policy</label>
+                </div>
+                <button onclick="formData()" type="submit" class="btn btn-primary mt-2">Create Account</button>
+            </div>
+        </div>
+    </form>
+    
+    
+    <script>
+        function formData() {
+            let first_name = document.getElementById("first_name").value;
+            let last_name = document.getElementById("last_name").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            console.log(`Adı:${first_name} ${last_name} ${email}  ${password}`);
 
+            let first_name2=$('#first_name').val();
+            console.log(first_name2);
 
-<!-- end codes -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-<!-- external js -->
- <script src="form.js"></script>
+            if(first_ame2==null || first_name2==''){
+                              alert( "A dı   b o ş   g e ç i " ) }
+
+        }
+</script>
+
+    <!-- end codes -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <!-- external js -->
+    <script src="form.js"></script>
 </body>
+
 </html>
