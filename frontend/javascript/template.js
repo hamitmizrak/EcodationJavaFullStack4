@@ -1379,7 +1379,7 @@ let object6Stringify = () => {
             "version": "18"
         }
     }
-    //1.SORU: Adı
+    //SORU: Adı Hamit nasıl çağırabiliriz
     //1.YOL
     console.log(person.adi);
 
@@ -1406,6 +1406,7 @@ let object6Stringify = () => {
     console.log(jsonToString.substring(data, data + 5));
 
     //4-C
+    //JSOn objesini String Çevirmek
     const jsonToString2 = JSON.stringify(person);
     const parse2 = JSON.parse(jsonToString2);
     let name1 = parse2.adi;
@@ -1419,6 +1420,69 @@ let object6Stringify = () => {
     console.log(JSON.parse(JSON.stringify(person)).adi);
 }
 object6Stringify();
+////////////////////////////////////////////
+//this:
+// document: Html sayfasını göstermek
+// window: en tepedeki
+// this : window nesnesini göstermek
+let object7This= () => {
+
+    //1-) this: Objelerde attribute ulaşmak için kullanıyoruz.
+    let data1={
+        "adi":"Hamit",
+        dataFunction:function(){
+            return this.adi;
+        }
+    }
+    document.write(data1.dataFunction())
+}
+//object7This();
+///////////////////////////////////////////
+
+// call Apply Bind ==> 
+// Bir fonksiyonun farklı objelerde kullanmaya yarar.
+// Fonksiyonun dışardan bir obje verisine bağladım.
+// parametreli ve parametresiz kullanım söz konusudur.
+// call ile apply aynıdır sadece parametrelide kullanımlarında dizi yazmak
+// bind ise bir fonksiyon olarak döndürmemiz gerekir. ancak call ve apply direk çağırır.
+
+//1.YÖNTEM PARAMETRESIZ
+//FONKSIYON
+let callApplyBindFunctionWithoutParam= function(){
+    document.writeln(`Merhabalar: ${this.adi} <br/>`);
+}
+//objeye bağlamak: call ile apply parametresizde kullanımları aynı
+// bind ise bize bir değer döndermek için bir fonksiyonda yazmamız gerekir.
+//OBJECT
+let objectData1={adi:'Hamit'};
+
+callApplyBindFunctionWithoutParam.call(objectData1);
+
+callApplyBindFunctionWithoutParam.apply(objectData1);
+
+let newBindFuctionWithoutParam=callApplyBindFunctionWithoutParam.bind(objectData1);
+newBindFuctionWithoutParam();
+
+document.writeln(`**********************<br/>`)
+
+///////////////////////////////////////////////////////////////////////////
+//2.YÖNTEM PARAMETRELI 
+//parametrelide call ile apply arasındaki fark [] yazmak veya yazmamak
+//FONKSIYON
+let callApplyBindFunctionParam= function(x,y){
+    document.writeln(`Merhabalar: ${this.adi} X:${x} Y:${y}<br/>`);
+}
+
+let objectData2={adi:'Hamit'}; 
+
+callApplyBindFunctionParam.call(objectData2,'Java',"nodejs");
+
+//apply'da veriler dizi içinde gösterilir
+callApplyBindFunctionParam.apply(objectData2,['Java',"nodejs"]);
+
+let newBindFuctionParam=callApplyBindFunctionParam.bind(objectData2,'Java',"nodejs");
+newBindFuctionParam();
+
 
 ///////////////////////////////////////////
 // callback
