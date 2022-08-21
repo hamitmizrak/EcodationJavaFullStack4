@@ -1484,10 +1484,20 @@ let object7This= () => {
 // newBindFuctionParam();
 ///////////////////////////////////////////
 let sum=()=>{
-
+    setInterval(function () {
     console.log("Merhabalar")
-}
+    }, 500)
 
+}
+///////////////////////////////////////////
+//DOM
+function parag() {
+    // document.getElementById("p_id").innerHTML="<b>Değişti</b>";
+    //document.getElementById("p_id").innerText="<b>Değişti</b>";
+    //document.getElementsByClassName("p_class")[0].innerHTML="<b>Değişti</b>";
+    //document.getElementsByName("p_name")[0].innerHTML="<b>Değişti</b>";
+    document.getElementsByTagName("p")[0].innerHTML = "<b>Değişti</b>";
+}
 
 ///////////////////////////////////////////
 // callback
