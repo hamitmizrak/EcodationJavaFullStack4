@@ -18,34 +18,36 @@
     <!-- jquery  -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<style>
-    .inputContainer i {
-        position: absolute;
-    }
-
-    .icon {
-        padding: 1rem;
-        color: rgb(98, 0, 255);
-        width: 3rem;
-        text-align: left;
-    }
-
-    .iconInput {
-        width: 100%;
-        text-align: center;
-        font-size: 1.3rem;
-    }
-
-    input[type="text"],
-    input[type="password"],
-    input[type="email"] {
-        padding: .3rem;
-    }
-</style>
 </head>
 
 <body class="bg-dark text-white">
     <!-- start codes -->
+
+    <style>
+        .inputContainer i {
+            position: absolute;
+        }
+
+        .icon {
+            padding: 1rem;
+            color: rgb(98, 0, 255);
+            width: 3rem;
+            text-align: left;
+        }
+
+        .iconInput {
+            width: 100%;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            padding: .3rem;
+        }
+    </style>
+
 
     <h4 class="text-center">Register</h4>
     <p class="text-center">Fill out this form</p>
@@ -82,23 +84,7 @@
         </div>
     </form>
     
-    
-    <script>
-        function formData() {
-            let first_name = document.getElementById("first_name").value;
-            let last_name = document.getElementById("last_name").value;
-            let email = document.getElementById("email").value;
-            let password = document.getElementById("password").value;
-            console.log(`Adı:${first_name} ${last_name} ${email}  ${password}`);
 
-            let first_name2=$('#first_name').val();
-            console.log(first_name2);
-
-            if(first_ame2==null || first_name2==''){
-                              alert( "A dı   b o ş   g e ç i " ) }
-
-        }
-</script>
 
     <!-- end codes -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
