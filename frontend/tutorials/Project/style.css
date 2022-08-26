@@ -1,0 +1,32 @@
+/* temel renkler */
+:root{
+--primary-color:#007bff!important;
+--secondary-color:#4fe4a8!important;
+--dark-color:#3b5b5d!important;
+--light-color:#b7e8ec!important;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size:10px;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    line-height:1.6;
+    background-color: var(--primary-color);
+}
+
+a{
+    color:var(--dark-color);
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body{
+            font-size:2rem;
+        }
+        .dark-mode{
+            background-color: #000;
+            color:#FFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Başlık</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo iure sed sunt.</p>
+    <button onclick="darkLight()" >DARK MODE</button>
+
+    <script>
+        let darkLight=()=>{
+            let element=document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>

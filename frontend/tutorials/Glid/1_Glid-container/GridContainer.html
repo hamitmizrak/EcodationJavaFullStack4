@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grid_container {
+            /* display:grid veya display:inline-grid; */
+            display: grid;
+
+            /* COLUMNS */
+            /* grid-template-columns: 200px 250px 300px 200px;
+            grid-template-columns: 200px auto 200px auto;
+            grid-template-columns: auto auto  25%;  */
+
+            /* grid-template-columns: 200px 400px auto;
+           /* 1 fragment: aynı auyo gibi davranır
+            grid-template-columns: 150px 200px 1fr;
+           grid-template-columns: 150px 200px 1fr 2fr; */
+
+            /* grid-template-columns: auto auto auto auto;
+            grid-template-columns: repeat(4,auto);
+            grid-template-columns: repeat(4,250px);   */
+
+            /*ROWS*/
+            /* Yükseklik vermek */
+            /* grid-template-columns: 150px 200px 1fr;
+            grid-template-rows: 200px 350px; */
+            /* ikinci satır:350px verdim */
+
+            /* height:600px;
+            grid-template-columns: 150px 200px 1fr;
+            grid-template-rows: 200px 350px;  */
+
+            /* 1.kolon 2 birim , 2.kolon 1 birim olacak */
+            /*grid-template-columns: 2fr 1fr;*/
+            /* 1.satır 1 birim 2.satır 2 birim olacak */
+            /*grid-template-rows: 1fr 2fr;*/
+            /* 3.satırdan itibaren 3 birim olacak */
+            /*grid-auto-rows:3fr;*/
+
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1rem;
+            background-color: blue;
+        }
+
+
+
+        .grid_item:first-child {
+            /* ilk kolon 2'ten başlasın*/
+            /* grid-column-start: 2;
+            grid-column-end: 5; */
+            /*start ve end yaptığını yapar*/
+            /* grid-column: 2/5;
+            alternative: grid-column: 2/5 */
+            /* grid-column: 2/span 3; */
+
+            /* ilk satır 1'den başlasın*/
+            /* grid-row-start:1;
+            grid-row-end:4; */
+            /*start ve end yaptığını yapar*/
+            /* grid-row: 1/4; */
+            /* grid-row: 1/ span 3; */
+
+            /* grid-row: 1/ span 3; */
+            /* grid-column: 2/span 3; */
+            /*Yukarıdakinin aynısını yapar önce satırdan başlar*/
+            /* başlangçı satır:
+            başlangıç kolon
+            kaç tane satır ilerlesin
+            kaç tane kolon ilerlesin */
+            grid-area:1 / 2 / span 3 / span 3;
+        }
+
+        .grid_item {
+            background-color: rgb(255, 11, 11);
+            padding: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+<div class="grid_container">
+    <div class=" grid_item"></div>
+    <div class=" grid_item"></div>
+    <div class=" grid_item"></div>
+    <div class=" grid_item"></div>
+    <div class=" grid_item"></div>
+    <div class=" grid_item"></div>
+</div>
+</body>
+</html>
