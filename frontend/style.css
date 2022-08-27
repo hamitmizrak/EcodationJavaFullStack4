@@ -10,10 +10,15 @@ project verion: v.1
 :root{
     --primary-color:#007bff!important;
     --secondary-color:#90bcea!important;
+
     --dark-color:#36393b!important;
     --light-color:#edf8ff!important;
+
     --background-color:#f8f9f9!important;
+--footer-bg-color: #3d3d3d !important;
+    --footer-text-color: #ffffff !important;
     --max-width:100% !important;
+    --copy-right-color: #1a1919;
 }
 
 /* common config */
@@ -57,9 +62,17 @@ img:hover{
     box-shadow: 1px 1px 2px 1px rgba(0,0,0,.8);
 }
 
-p{
+ p {
     text-align: justify;
-    margin:0 1rem;
+    margin: 1rem 1rem;
+    }
+    
+    .uppercase {
+        text-transform: uppercase;
+    }
+    
+    .lowercase {
+        text-transform: lowercase;
 }
 /* ############################################################## */
 /*line clamp*/
@@ -93,7 +106,7 @@ header{
     background-size:cover;
     background-position: 50% 50%;
     z-index:-1;
-    height: 100vh;
+    height: 95vh;
     padding-top:15rem;
 }
 
@@ -105,9 +118,39 @@ header h1,h4{
 /* ############################################################## */
 /* MAIN */
 
+/* ############################################################## */
+
+#back_top {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 3rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background-color: #5c5cde;
+    color: white;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+}
+
+#back_top:hover {
+    opacity: .8;
+    box-shadow: 1px 1px 3px 1px rgba(162, 231, 43, 0.6);
+    transition: 3s all;
+}
 
 /* ############################################################## */
 /* FOOTER */
+footer {
+    min-height: 20rem;
+    width: 100%;
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+}
+
+#copy_right {
+    background-color: var(--copy-right-color);
+}
 
 
 /* ############################################################## */
