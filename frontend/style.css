@@ -1,0 +1,103 @@
+/*
+project author: Hamit Mızrak
+project year:2022
+project name: One Page 
+project verion: v.1
+*/
+/*start code*/
+
+/*common property*/
+:root{
+    --primary-color:#007bff!important;
+    --secondary-color:#90bcea!important;
+    --dark-color:#36393b!important;
+    --light-color:#edf8ff!important;
+    --background-color:#f8f9f9!important;
+    --max-width:100% !important;
+}
+
+/* common config */
+*{
+    margin: 0!important;
+    padding: 0!important;
+    box-sizing: border-box;
+}
+
+/*html*/
+html{
+    font-size: 20px;
+}
+
+/*body*/
+body{
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    background-color:var(--background-color) ;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+/* img */
+img{
+    max-width: 100%;
+    height: auto;
+    transition:  2s all;
+}
+img:hover{
+    opacity:0.9;
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,.8);
+}
+
+p{
+    text-align: justify;
+    margin:0 1rem;
+}
+/* ############################################################## */
+/*line clamp*/
+.line-clamp4{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clamp6{
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clamp8{
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ############################################################## */
+/* NAVBAR */
+
+
+/* ############################################################## */
+/* HEADER */
+
+
+
+/* ############################################################## */
+/* MAIN */
+
+
+/* ############################################################## */
+/* FOOTER */
+
+
+/* ############################################################## */
+/*end codes*/

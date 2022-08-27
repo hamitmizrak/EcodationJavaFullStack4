@@ -2,8 +2,15 @@
 <html lang="tr">
 
 <head>
-    <title>Templates Html5 Css3 JS</title>
+    <title>One Page Project</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="images/desk-g051a3dc11_1920.jpg">
+
+    <!-- Turkce karakter -->
     <meta charset="utf-8">
+
+    <!-- responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- seo -->
@@ -19,29 +26,78 @@
         href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Crimson+Text&family=Josefin+Sans:ital,wght@1,300&family=Open+Sans:wght@300&family=Quicksand:wght@300&display=swap"
         rel="stylesheet">
 
-    <!-- font-family: 'Open Sans', sans-serif; -->
-
     <!-- Bootstrap CSS v5.0.2 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 
     <!-- jquery  -->
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- jquery UI -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <!-- animate CSS-->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- wow js-->
+    <script src="js/wow.min.js"></script>
+    <script> new WOW(
+            {
+                boxClass: 'wow',      // default
+                animateClass: 'animated', // default
+                offset: 0,          // default
+                mobile: true,       // default
+                live: true        // default
+            }
+
+        ).init() </script>
 
     <!-- external css -->
     <link rel="stylesheet" href="style.css">
 
+
+
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar_id">
     <!-- start codes -->
 
     <!-- nav start  -->
-    <nav></nav>
+    <nav id="navbar_id">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top opacity-50">
+            <div class="container">
+                <a class="navbar-brand" href="#">LOGO</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ability">Ability</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="d-flex my-2 my-lg-0">
+                        <input class="form-control me-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </nav>
     <!-- nav end -->
 
     <!-- header start  -->
-    <header></header>
+    <header id="header_id"></header>
     <!-- header end -->
 
     <!-- main start  -->
@@ -54,6 +110,13 @@
     <footer>
     </footer>
     <!-- footer end -->
+
+
+    <!-- Counter JS -->
+    <!-- Waypoints JavaScript Libraries -->
+    <script src="./experiences/waypoints/waypoints.min.js"></script>
+    <!-- Counterup JavaScript Libraries -->
+    <script src="./experiences/counterup/counterup.min.js"></script>
 
     <!-- end codes -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
