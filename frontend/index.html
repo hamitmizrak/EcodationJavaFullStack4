@@ -107,8 +107,8 @@
 
                     <li class="nav-item">
                         <div class="d-flex ms-3">
-                            <button onclick="darkLight()" class="nav-link" href="#about-me"><i
-                                    class="fa-regular fa-address-card"></i></button>
+                            <button onclick="darkLight()" id="darkLightId">
+                                <i class="fa-solid fa-moon text-white p-2"></i></button>
                         </div>
                     </li>
                 </ul>
@@ -142,7 +142,7 @@
 
 
     <!--start back_to_top  -->
-    <a id="back_top" href="#navbar_id"><i class="fa-solid fa-arrow-up-short-wide"></i></a>
+    <a id="back_top" href="#navbar_id"><i class="fa-solid fa-arrow-turn-up"></i></a>
     <!--stop back_to_top  -->
 
     <!-- footer start  -->
@@ -215,7 +215,8 @@
 
         <!-- sub footer -->
         <div class="text-center p-4" id="copy_right">
-            <span id="now_year">2022</span>
+            <span id="now_year">
+                <script>document.write(`2022 - ${new Date().getFullYear()}`)</script></span>
             &copy; Copyright
             <a href="https://www.hamitmizrak.com.tr">Hamit Mızrak</a>
         </div>

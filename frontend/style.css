@@ -130,6 +130,11 @@ p {
     color: black
 }
 
+#darkLightId {
+    background: #1a1919;
+
+}
+
 
 /* ############################################################## */
 /* HEADER */
@@ -153,16 +158,15 @@ h4 {
 
 /* ############################################################## */
 
-#back_top {
+#back_top i{
     position: fixed;
     right: 0;
     bottom: 0;
-    width: 3rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    background-color: #5c5cde;
-    color: white;
-    font-size: 1.5rem;
+    background-color: #ffffff;
+    color: #9c01fc;
+    font-size: 1.4rem;
     padding: .5rem 1rem;
 }
 
