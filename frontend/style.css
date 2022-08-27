@@ -18,8 +18,8 @@ project verion: v.1
 
 /* common config */
 *{
-    margin: 0!important;
-    padding: 0!important;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -32,7 +32,7 @@ html{
 body{
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.5;
+   
     background-color:var(--background-color) ;
     position: relative;
 }
@@ -88,7 +88,14 @@ p{
 
 /* ############################################################## */
 /* HEADER */
-
+header{
+    background-image: url('images/header.jpg');
+    background-size:cover;
+    background-position: 50% 50%;
+    z-index:-1;
+    height: 100vh;
+    padding-top:15rem;
+}
 
 
 /* ############################################################## */
