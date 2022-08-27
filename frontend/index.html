@@ -52,6 +52,7 @@
 
         ).init() </script>
 
+
     <!-- external css -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -60,36 +61,58 @@
     <!-- start codes -->
 
     <!-- nav start  -->
-    <nav id="navbar_id">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top opacity-50">
-            <div class="container">
-                <a class="navbar-brand" href="#">LOGO</a>
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#ability">Ability</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                <a class="dropdown-item" href="#">Action 1</a>
-                                <a class="dropdown-item" href="#">Action 2</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <form class="d-flex my-2 my-lg-0">
-                        <input class="form-control me-sm-2" type="text" placeholder="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
+    <nav id="navbar_id" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid" id="navbar_expend">
+            <a class="navbar-brand" href="index.html" id="logo_href">
+                <img src="images/startup-g8fd988460_1920.jpg" id="logo_id" alt="Ecodation" loading="lazy" />
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto ms-5 mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ability"><i class="fa-solid fa-bars-progress "></i>Ability</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news-paper"><i class="fa-regular fa-newspaper"></i>Newspaper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog"><i class="fa-solid fa-rss"></i>Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me"><i class="fa-regular fa-address-card"></i>About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><i class="fa-solid fa-mobile-retro"></i>contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-auto ms-5 mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <form class="d-flex  my-lg-0">
+                            <input class="form-control me-sm-2" type="text" placeholder="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="d-flex ms-3">
+                            <button onclick="darkLight()" class="nav-link" href="#about-me"><i
+                                    class="fa-regular fa-address-card"></i></button>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </nav>
     </nav>
     <!-- nav end -->
 
@@ -98,9 +121,11 @@
         <div class="text-white jumbotron">
             <div class="container">
                 <div class="p-5 text-center">
-                    <h1 class="text-uppercase display-3 shadow wow bounceIn animated" data-wow-delay=".40s">Ecodation full Stack Hoşgeldiniz</h1>
+                    <h1 class="text-uppercase display-3 shadow wow bounceIn animated" data-wow-delay=".40s">Ecodation
+                        full Stack Hoşgeldiniz</h1>
                     <h4 class="wow bounceIn animated" data-wow-delay=".50s">Html5 Css3 JS jquery Bootstrap</h4>
-                    <a class="btn btn-outline-warning shadow wow bounceIn animated" data-wow-delay=".60s" href="https://akademi.ecodation.com/"> Bizi Takip Edin</a>
+                    <a class="btn btn-outline-warning shadow wow bounceIn animated" data-wow-delay=".60s"
+                        href="https://akademi.ecodation.com/"> Bizi Takip Edin</a>
                     <a class="btn btn-primary shadow wow bounceIn animated" data-wow-delay=".70s"> Linkedin</a>
                     <a class="btn btn-success shadow wow bounceIn animated" data-wow-delay=".80s"> GitHub</a>
                 </div>
@@ -116,18 +141,16 @@
     <!-- main end -->
 
 
-
-     <!--start back_to_top  -->
-     <a id="back_top" href="#navbar_id"><i class="fa-solid fa-arrow-up-short-wide"></i></a>
-     <!--stop back_to_top  -->
-
+    <!--start back_to_top  -->
+    <a id="back_top" href="#navbar_id"><i class="fa-solid fa-arrow-up-short-wide"></i></a>
+    <!--stop back_to_top  -->
 
     <!-- footer start  -->
     <footer class="text-center text-lg-start">
         <!-- start footer_section_1  -->
         <section id="footer_section_1" class="p-5 border-top d-flex justify-content-center justify-content-lg-between">
             <div class="me-5 d-none d-lg-block">Project One Pages</div>
-    
+
             <!-- social -->
             <div id="social_id">
                 <a href="#!" class="me-1 btn btn-outline-primary text-reset btn-floating">
@@ -145,7 +168,7 @@
             </div>
         </section>
         <!-- end footer_section_1  -->
-    
+
         <!-- start footer_section_2  -->
         <section id="footer_section_2">
             <div class="container-fluid">
@@ -154,7 +177,8 @@
                         <h6 class="uppercase">
                             <i class="fa-solid fa-earth-oceania"></i>COMPANY INC
                         </h6>
-                        <p class="line-clamp6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus architecto maxime in blanditiis,
+                        <p class="line-clamp6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                            architecto maxime in blanditiis,
                             unde porro molestias, fuga nobis id beatae culpa optio voluptatem velit fugiat!</p>
                     </div>
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto shadow">
@@ -164,40 +188,39 @@
                             <input type="email" class="form-control mb-2" placeholder="Enter your email address" />
                             <textarea name="" id="" rows="2" class="form-control mb-2"></textarea>
                             <button class="btn btn-primary" style="width: 100%;">Submit</button>
-                            </form>
-                        </div>
-                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto shadow">
-                            <h6 class="uppercase">
-                                <i class="fa-solid fa-earth-oceania"></i>COMPANY INC
-                            </h6>
-                            <p class="line-clamp6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus architecto maxime in blanditiis,
-                                unde porro molestias, fuga nobis id beatae culpa optio voluptatem velit fugiat!</p>
-                        </div>
-                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto shadow">
-                            <form method="post">
-                                <h4 class="uppercase mb-1">Subscribe</h4>
-                                <p class="mb-3 line-clamp6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus qui tenetur rem natus rerum? Corporis est animi eveniet ratione assumenda?</p>
-                                <input type="text" class="form-control mb-2" placeholder="Enter your name" />
-                              
-                                <button class="btn btn-danger" style="width: 100%;">Submit</button>
-                                </form>
-                        </div>
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto shadow">
+                        <h6 class="uppercase">
+                            <i class="fa-solid fa-earth-oceania"></i>COMPANY INC
+                        </h6>
+                        <p class="line-clamp6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                            architecto maxime in blanditiis,
+                            unde porro molestias, fuga nobis id beatae culpa optio voluptatem velit fugiat!</p>
+                    </div>
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto shadow">
+                        <form method="post">
+                            <h4 class="uppercase mb-1">Subscribe</h4>
+                            <p class="mb-3 line-clamp6">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Doloribus qui tenetur rem natus rerum? Corporis est animi eveniet ratione assumenda?</p>
+                            <input type="text" class="form-control mb-2" placeholder="Enter your name" />
+
+                            <button class="btn btn-danger" style="width: 100%;">Submit</button>
+                        </form>
                     </div>
                 </div>
-            </section>
-             <!-- end footer_section_2  -->
+            </div>
+        </section>
+        <!-- end footer_section_2  -->
 
-             <!-- sub footer -->
-             <div class="text-center p-4" id="copy_right">
-                <span id="now_year">2022</span>
-                &copy; Copyright
-                <a href="https://www.hamitmizrak.com.tr">Hamit Mızrak</a>
-             </div>
+        <!-- sub footer -->
+        <div class="text-center p-4" id="copy_right">
+            <span id="now_year">2022</span>
+            &copy; Copyright
+            <a href="https://www.hamitmizrak.com.tr">Hamit Mızrak</a>
+        </div>
     </footer>
     <!-- footer end -->
-
-   
-
 
     <!-- Counter JS -->
     <!-- Waypoints JavaScript Libraries -->
