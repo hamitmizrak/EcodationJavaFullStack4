@@ -187,7 +187,16 @@ margin-bottom:5rem;
     background-color: var(--main-color-even);
 }
 
-
+/*aboutme */
+.parallax_data{
+    background-image: url('images/desk-g051a3dc11_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30rem;
+    background-color: transparent;
+    background-attachment: fixed;
+    padding:4rem;
+}
 
 #worksId p{
     font-size: 1rem;
