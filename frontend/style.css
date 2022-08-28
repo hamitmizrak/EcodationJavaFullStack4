@@ -181,17 +181,14 @@ h4 {
 /*Work */
 #worksId{
     margin-top:5rem;
-    padding-top:5rem;
-    height: 35rem;
+    padding-top:8rem;
+    padding-bottom:8rem;
+margin-bottom:5rem;
     background-color: var(--main-color-even);
 }
 
-#worksId i{
-    font-size: 5rem;
-}
-#worksId h4{
-    font-size: 2rem;
-}
+
+
 #worksId p{
     font-size: 1rem;
     text-align: justify;
