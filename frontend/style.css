@@ -171,7 +171,7 @@ header {
     background-size: cover;
     background-position: 50% 50%;
     z-index: -1;
-    height: 95vh;
+    height: 100vh;
     padding-top: 15rem;
 }
 
@@ -187,8 +187,7 @@ h4 {
 /* counter */
 #counterId {
     background-color: var(--main-color-odd);
-    margin-top: 5rem;
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 
 #counterId .counter-header, .counters
@@ -220,20 +219,23 @@ p {
     line-height: 1.4;
 }
 
-#worksId h4,
-p {
+#worksId .icon_messages p{
     color: white;
 }
 
 /*aboutme */
 .parallax_data {
-    background-image: url('images/desk-g051a3dc11_1920.jpg');
+    background-image: url('images/parallax.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 30rem;
     background-color: transparent;
     background-attachment: fixed;
     padding: 4rem;
+
+}
+.parallax_data .container .row > p{
+    color:white;
 }
 
 
@@ -281,16 +283,17 @@ min-height: 35rem;
     bottom: 0;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    background-color: #ffffff;
-    color: #9c01fc;
+    background-color: #9c01fc;
+    color: #ffffff;
     font-size: 1.4rem;
     padding: .5rem 1rem;
+    border-radius: 50% 50%;
 }
 
 #back_top:hover {
-    opacity: .8;
+    opacity: .6;
     box-shadow: 1px 1px 3px 1px rgba(162, 231, 43, 0.6);
-    transition: 3s all;
+    transition: 2s all;
 }
 
 /* ############################################################## */
