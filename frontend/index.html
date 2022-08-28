@@ -5,7 +5,7 @@
     <title>One Page Project</title>
 
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="images/desk-g051a3dc11_1920.jpg">
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
 
     <!-- Turkce karakter -->
     <meta charset="utf-8">
@@ -52,6 +52,11 @@
 
         ).init() </script>
 
+    <!-- Counter JS -->
+    <!-- Waypoints JavaScript Libraries -->
+    <script src="./experiences/waypoints/waypoints.min.js"></script>
+    <!-- Counterup JavaScript Libraries -->
+    <script src="./experiences/counterup/counterup.min.js"></script>
 
     <!-- external css -->
     <link rel="stylesheet" href="style.css">
@@ -59,12 +64,11 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar_id">
     <!-- start codes -->
-
     <!-- nav start  -->
     <nav id="navbar_id" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid" id="navbar_expend">
             <a class="navbar-brand" href="index.html" id="logo_href">
-                <img src="images/startup-g8fd988460_1920.jpg" id="logo_id" alt="Ecodation" loading="lazy" />
+                <img src="images/logo.jpg" id="logo_id" alt="Ecodation" loading="lazy" />
             </a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -136,18 +140,39 @@
 
     <!-- main start  -->
     <main>
-        <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores accusamus veniam non, sapiente minima adipisci explicabo nam voluptatem qui et molestiae quas voluptate ex natus nobis mollitia quibusdam ea. Cupiditate.
-            Reprehenderit quaerat eveniet quos atque reiciendis! Est animi aspernatur necessitatibus illum iure minus excepturi, fugiat aut, nobis omnis a unde esse, neque delectus aliquam cupiditate. Nihil facilis id repellat iure?
-            Repudiandae, eos. Nulla distinctio commodi, exercitationem accusantium reiciendis est officiis enim quis? Repellat ratione quas rerum blanditiis cumque, ipsam illo impedit assumenda sequi facere architecto eius dolore nemo sed ducimus.
-            Quo sed libero saepe itaque doloribus fuga aliquid hic suscipit quos? Amet corrupti pariatur incidunt excepturi numquam quia iusto expedita. Rerum nihil ex praesentium necessitatibus porro voluptatibus cupiditate, architecto ipsa?
-            Aliquid totam eum autem hic doloremque a sed, ipsum id dolorum cum, et asperiores deserunt quasi voluptate velit placeat odio reiciendis culpa aperiam mollitia nulla nobis! Optio consectetur labore voluptate?
-            Nihil animi possimus fugit veritatis dolorum, delectus nemo, saepe aspernatur quo officia inventore quasi at et minus rem, laboriosam vitae doloremque exercitationem voluptatem repellat sapiente. Tempora ratione sunt libero molestiae!
-            Amet repudiandae quis consequatur sed, ut impedit sapiente dolor commodi debitis magni minima molestias harum reiciendis pariatur nulla asperiores dolorum recusandae eum quaerat quam? Voluptas earum sequi atque animi pariatur?
-            Laboriosam at nemo in, perspiciatis culpa aliquid omnis aperiam quam eius! Sed doloremque quod maiores, vitae repellat possimus omnis cum quis labore, ipsam reprehenderit architecto amet sint, deserunt modi illo!
-            Fuga nesciunt inventore magnam qui quasi, doloremque nihil harum culpa, tempore veniam omnis minima numquam ut minus repellat labore illum commodi reiciendis suscipit pariatur voluptas officiis earum. Sed, consequatur perspiciatis?
-            Exercitationem sapiente, non, voluptas doloremque corporis facere animi magnam quam minima, dolores quod quisquam. Provident libero ducimus hic est qui quae quod minus tempora iusto eius quibusdam, aspernatur possimus tempore!</p>
+        <!-- start counter -->
+        <section id="counterId" class="shadow wow bounceIn animated" data-wow-delay="1s">
+            <div class="container" style="margin-top:4rem;">
+                <div class="counter-header">
+                    <h3>Başarılarımız</h3>
+                </div>
+
+                <div class="row counters">
+                    <div class="col-lg-3 col-md-6 mx-auto text-center shadow">
+                        <span data-toggle="counter-up">110</span>
+                        <p class="text-center">Project</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mx-auto text-center">
+                        <span data-toggle="counter-up">5</span>
+                        <p class="text-center">Satır Kod</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mx-auto text-center shadow">
+                        <span data-toggle="counter-up">55</span>
+                        <p class="text-center">Proje Teslim</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mx-auto text-center">
+                        <span data-toggle="counter-up">25</span>
+                        <p class="text-center">Project</p>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- end counter -->
+
+        <!-- start works -->
+
+        <!-- end works -->
+
     </main>
     <!-- main end -->
 
@@ -227,18 +252,15 @@
         <!-- sub footer -->
         <div class="text-center p-4" id="copy_right">
             <span id="now_year">
-                <script>document.write(`2022 - ${new Date().getFullYear()}`)</script></span>
+                <script>document.write(`2022 - ${new Date().getFullYear()}`)</script>
+            </span>
             &copy; Copyright
             <a href="https://www.hamitmizrak.com.tr">Hamit Mızrak</a>
         </div>
     </footer>
     <!-- footer end -->
 
-    <!-- Counter JS -->
-    <!-- Waypoints JavaScript Libraries -->
-    <script src="./experiences/waypoints/waypoints.min.js"></script>
-    <!-- Counterup JavaScript Libraries -->
-    <script src="./experiences/counterup/counterup.min.js"></script>
+
 
     <!-- end codes -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

@@ -2,7 +2,7 @@
 project author: Hamit Mızrak
 project year:2022
 project name: One Page 
-project verion: v.1
+project verion: v.1 #8C6544
 */
 /*start code*/
 
@@ -10,16 +10,21 @@ project verion: v.1
 :root {
     --primary-color: #007bff !important;
     --secondary-color: #90bcea !important;
-
     --dark-color: #36393b !important;
     --light-color: #edf8ff !important;
 
+    --max-width: 100% !important;
+    --navbar-icon-color: #f6e317;
     --background-color: #f8f9f9 !important;
+
+    --main-color-odd:#f8f9f9;
+    --main-color-even:#6896eb;
+
     --footer-bg-color: #3d3d3d !important;
     --footer-text-color: #ffffff !important;
-    --max-width: 100% !important;
+   
     --copy-right-color: #1a1919;
-    --navbar-icon-color: #f6e317;
+    
 }
 
 /* common config */
@@ -155,6 +160,21 @@ h4 {
 
 /* ############################################################## */
 /* MAIN */
+
+/* counter */
+#counterId{
+    background-color: var(--main-color-odd);
+}
+
+#counterId .counter-header,p{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#counterId .row span{
+    font-size: 3.5rem;
+}
 
 /* ############################################################## */
 
