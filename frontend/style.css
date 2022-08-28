@@ -176,6 +176,27 @@ h4 {
     font-size: 3.5rem;
 }
 
+/*Work */
+#worksId{
+    margin-top:4rem;
+}
+
+#worksId i{
+    font-size: 5rem;
+}
+#worksId h4{
+    font-size: 2rem;
+}
+#worksId p{
+    font-size: 1rem;
+    text-align: justify;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 1.4;
+    
+}
+
 /* ############################################################## */
 
 #back_top i{
