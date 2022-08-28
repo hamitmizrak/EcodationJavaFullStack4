@@ -191,7 +191,7 @@ h4 {
     padding-top: 5rem;
 }
 
-#counterId .counter-header,
+#counterId .counter-header, .counters
 p {
     text-align: center;
     text-transform: uppercase;
@@ -251,6 +251,28 @@ min-height: 35rem;
     margin-top:5rem;
 }
 
+/*blog*/
+#blog_id{
+    position:relative;
+}
+
+#blog_id:before{
+    position: absolute;
+    top:0;
+    right: 0px;
+    bottom:0;
+    left:0;
+    content:"";
+    background-image: url('images/header.jpg');
+    background-size: cover;
+    opacity: .8;
+}
+
+
+#blog_id .card > h4,p{
+    color:black
+
+}
 /* ############################################################## */
 
 #back_top i {
