@@ -25,7 +25,7 @@ public class _005_UserData {
         else if(chooise==1)
             System.out.println("Evdeyiz");
         else
-            System.out.println("Cevaplamadan Çıkıldı");
+            System.out.println("Cevaplamadan Çıkıldı.");
 
      //String data=  JOptionPane.showInputDialog("Lütfen birşey yazınız");
     // System.out.println(data.toUpperCase()+"\nkelime");
