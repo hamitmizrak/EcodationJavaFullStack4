@@ -26,9 +26,6 @@ public class _015_Exception {
         } finally {
             System.out.println("database.close");
         }
-
         System.out.println("son kelime");
-
-
     }
 }
