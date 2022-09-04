@@ -1,9 +1,8 @@
 package com.hamitmizrak.javase;
-
 import java.util.Scanner;
-
 public class _021_IterativeRecursiveFactoriyelMethod {
 
+    //class varaible
    private static Scanner klavye=new Scanner(System.in);
 
     public static int userData() throws HamitMizrakException {
@@ -47,8 +46,5 @@ public class _021_IterativeRecursiveFactoriyelMethod {
             result=   recursiveFactoriyel(number);
             System.out.println(result);
         }
-
     }
-
-
 }
