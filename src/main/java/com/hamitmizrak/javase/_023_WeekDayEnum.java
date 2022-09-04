@@ -15,11 +15,11 @@ public class _023_WeekDayEnum {
     }
 
     private static void whoWeekDay() {
-
+        //_022_Enum.PAZARTESI.toString():
+        String day1="PAZARTESI";
         String day = getUserData().toUpperCase();
         switch (day) {
-            //_022_Enum.PAZARTESI.toString():
-           // String day1="PAZARTESI";
+
             case "PAZARTESI":
                 System.out.println("Günlerden PAZARTESI");
                 break;
