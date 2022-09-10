@@ -5,9 +5,10 @@ import java.io.*;
 import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Scanner;
-
-//URL
-//URI
+// Absolute Path: Statiktir.
+//Relative PAth: Dinamiktir.
+// URL: Uniform Resource Loader
+// URI: Uniform Resource Identifier
 @Log4j2
 public class _029_FileIO {
     private static final String PATH = "C:\\0_Tutorials\\fileio\\form.txt";
