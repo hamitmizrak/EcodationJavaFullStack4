@@ -2,9 +2,8 @@ package com.hamitmizrak.javase;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Locale;
 
-public class _31_Collection_List<T> {
+public class _31_Collection_List_1<T> {
 
     //LIST : LAV
     public static void main(String[] args) {
