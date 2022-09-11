@@ -1,26 +1,29 @@
-package com.hamitmizrak.oop.inheritancex;
+package com.hamitmizrak.oop.abstracx;
 
 public class InheritanceMainClass {
     public static void main(String[] args) {
 
-    /*    Computer computer=new Computer();
+        //polymorphism
+        Computer computer= new Msi();
         computer.setComputerName("computer");
         computer.setComputerCode("computer codes Xyı545");
         computer.setComputerMainCart("computer main cart 5156");
         computer.setComputerRam("computer Ram4512511");
         System.out.println(computer);
-        computer.computerMethod(); //polymorhism*/
+        computer.computerMethod(); //polymorhism
 
         System.out.println("********************************");
 
-        Msi msi=new Msi();
-        msi.setComputerName("Msi");
-        msi.setComputerCode("Msi codes Xyı545");
-        msi.setComputerMainCart("Msi main cart 5156");
-        msi.setComputerRam("Msi Ram4512");
-        msi.setSpecialMsi("msi special data");
-        System.out.println(msi);
-        msi.computerMethod(); //polymorhism
+        Msi msi2=new Msi();
+        msi2.setComputerName("Msi");
+        msi2.setComputerCode("Msi codes Xyı545");
+        msi2.setComputerMainCart("Msi main cart 5156");
+        msi2.setComputerRam("Msi Ram4512");
+        msi2.setSpecialMsi("msi special data");
+        System.out.println(msi2);
+        msi2.setSpecialMsi("asd");
+        msi2.govdesizMethod();//polymorhism
+        msi2.computerMethod(); //polymorhism
 
         System.out.println("********************************");
 
@@ -31,5 +34,6 @@ public class InheritanceMainClass {
         asus.setComputerRam("Asus Ram4512");
         System.out.println(asus);
         asus.computerMethod();//polymorhism
+        asus.govdesizMethod();
     }
 }

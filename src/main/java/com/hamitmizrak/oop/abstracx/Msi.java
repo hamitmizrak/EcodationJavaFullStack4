@@ -1,10 +1,10 @@
-package com.hamitmizrak.oop.inheritancex;
+package com.hamitmizrak.oop.abstracx;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter @Setter
-public class Msi extends Computer{
+public class Msi extends Computer {
 
     private String specialMsi;
 
@@ -19,5 +19,10 @@ public class Msi extends Computer{
     @Override
     public void computerMethod() {
         System.out.println("Msi Method");
+    }
+
+    @Override
+    public void govdesizMethod() {
+        System.out.println("Msi Gövdesiz Method");
     }
 }
