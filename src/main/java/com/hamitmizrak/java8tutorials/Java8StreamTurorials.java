@@ -124,7 +124,6 @@ public class Java8StreamTurorials {
         });
     }
 
-
     //map: stream verilerindeki her bir data üzerinden işlem yapabilmeye denir
     //map: her bir eleman üzerinden işlem yapar
     //map: lambda expression kullanıyoruz
@@ -138,8 +137,6 @@ public class Java8StreamTurorials {
             System.out.println(temp);
         });
     }
-
-
 
     // Reduce: tek bir yapıya indirgemedir
     // Reduce: bir önceki sonuç bir sonraki girdisidir (Software: Monad)
@@ -157,7 +154,6 @@ public class Java8StreamTurorials {
         int sum= dataSetInteger().stream().distinct().reduce(0,(x1,x2)->{ return x1+x2; });
         System.out.println(sum);
     }
-
 
     // NOT: Student diye bir Class oluştur bunun üzerinden: map,filter,reduce örneğini yap
     // Student nesnesine random for döngüsünde data set ekle
