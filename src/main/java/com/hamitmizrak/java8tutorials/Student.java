@@ -24,4 +24,8 @@ public class Student {
         this.surname = surname;
         this.number = number;
     }
+
+    public void numberMethod(){
+        System.out.println(this.number);
+    }
 }
