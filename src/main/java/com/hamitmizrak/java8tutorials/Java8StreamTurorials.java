@@ -139,8 +139,34 @@ public class Java8StreamTurorials {
     }
 
 
-    //reduce
-    //Match
+    // NOT: Student diye bir Class oluştur bunun üzerinden: map,filter,reduce örneğini yap
+    // Student nesnesine random for döngüsünde data set ekle
+    // Student ==> name,surname,age(random)
+    // Method Referances
+    // Match
+    // Reduce
+
+    //Student List
+    public static List<Student> studentList(){
+        List<Student> studentList=new ArrayList<Student>();
+        for (int i = 1; i <=5 ; i++) {
+            studentList.add(new Student(Long.valueOf(i),"username "+i,"surname "+i,100*i));
+        }
+        studentList.stream().forEach((temp)->{
+            System.out.println(temp);
+        });
+        return studentList;
+    }
+
+    //Method Referances ile gösterilir(::)
+    //Java 8 gelemiş özelliktir.
+    //Projede okunabilirliği artırır.(KArmaşıklığı azaltır)
+    //ContainingClass:staticOlanMethod
+    public static void staticMethodReferancesData(){
+        System.out.println("static metot");
+    }
+
+    //interface methodReferances();
 
     //PSVM
     public static void main(String[] args) {
@@ -169,7 +195,15 @@ public class Java8StreamTurorials {
         //streamFilterMethod();
 
         //map: Listedeki her bir veri üzerinden işlem yapabilmeye denir.
-        streamMapMethod();
+        //streamMapMethod();
+
+        studentList();
+
+        //Match:
+
+        //reduce
+
+
 
     } //end PSVM
 } //end Java8StreamTurorials
