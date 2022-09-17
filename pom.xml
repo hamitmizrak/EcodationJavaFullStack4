@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.7.2</version>
+        <version>2.6.10</version>
         <relativePath/>
     </parent>
 
@@ -53,24 +53,24 @@
         </dependency>
 
         <!-- web jar Bootstrap-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.webjars</groupId>
             <artifactId>bootstrap</artifactId>
             <version>3.3.7-1</version>
         </dependency>
-
+-->
         <!-- web jar jquery-->
-        <dependency>
+      <!--  <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>jquery</artifactId>
             <version>3.3.1-1</version>
-        </dependency>
+        </dependency>-->
 
         <!--mail send-->
-        <dependency>
+      <!--  <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
-        </dependency>
+        </dependency>-->
 
         <!--Spring Web Mvc Rest-->
         <dependency>
@@ -97,11 +97,11 @@
         </dependency>
 
         <!--  json web token JWT-->
-        <dependency>
+      <!--  <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
             <version>0.9.1</version>
-        </dependency>
+        </dependency>-->
 
         <!-- JSON işlemleri için gson-->
         <dependency>
@@ -172,11 +172,11 @@
         </dependency>
 
         <!--Mysql-->
-        <!--  <dependency>
+         <dependency>
               <groupId>mysql</groupId>
               <artifactId>mysql-connector-java</artifactId>
               <scope>runtime</scope>
-          </dependency>-->
+          </dependency>
 
         <!--postgresql-->
         <!--<dependency>
