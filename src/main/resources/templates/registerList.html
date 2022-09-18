@@ -43,20 +43,25 @@
         <h1 class="text-center text-primary text-uppercase">Computer</h1>
         <table class="table table-hover table-striped">
             <thead>
+
             <tr>
-                <th th:text="#{computer.id}"></th>
-                <th th:text="#{computer.name}"></th>
-                <th th:text="#{computer.price}"></th>
+                <th th:text="#{register.id}"></th>
+                <th th:text="#{register.name}"></th>
+                <th th:text="#{register.surname}"></th>
+                <th th:text="#{register.email}"></th>
+                <th th:text="#{register.password}"></th>
                 <th th:text="#{computer.update}"></th>
                 <th th:text="#{computer.show}"></th>
                 <th th:text="#{computer.delete}"></th>
             </tr>
             </thead>
             <tbody>
-            <tr th:each="computer:${computer_key6}">
-                <td th:text="${computer.id}"></td>
-                <td th:text="${computer.computerName}"></td>
-                <td th:text="${computer.computerPrice}"></td>
+            <tr th:each="register:${register_list}">
+                <td th:text="${register.id}"></td>
+                <td th:text="${register.name}"></td>
+                <td th:text="${register.surname}"></td>
+                <td th:text="${register.email}"></td>
+                <td th:text="${register.password}"></td>
 
                 <td><i class="fa-solid fa-wrench text-primary"></i></td>
                 <td><i class="fa-regular fa-image text-warning"></i></td>

@@ -25,18 +25,18 @@ public class RegisterDto implements Serializable {
 
     private Long id;
 
-    @NotEmpty(message = "üye adı boş geçilemez")
+    @NotEmpty(message = "{register.name}")
     private String name;
 
-    @NotEmpty(message = "üye soyadı boş geçilemez")
+    @NotEmpty(message = "{register.surname}")
     private String surname;
 
-    @NotEmpty(message = "üye email adresi boş geçilemez")
+    @NotEmpty(message = "{register.email}")
     @Email(message = "email uygun formatta yazmadınız")
     @AnnotationRegisterUniqueEmailAddress
     private String email;
 
-    @NotEmpty(message = "üye şifre boş geçilemez")
+    @NotEmpty(message = "{register.password}")
     @Size(min = 7,max = 20,message = "Şifre en az 7 en fazla 20 olabilir")
     //@Pattern(regexp = "^[a-zA-Z0-9]{7}]")
     private String password;

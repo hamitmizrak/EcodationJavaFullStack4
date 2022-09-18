@@ -4,6 +4,7 @@ import com.hamitmizrak.layer.bean.ModelMapperBean;
 import com.hamitmizrak.layer.business.dto.RegisterDto;
 import com.hamitmizrak.layer.data.entity.RegisterEntity;
 import com.hamitmizrak.layer.data.repository.IRegisterRepository;
+import com.hamitmizrak.layer.exception.ResourceNotFoundException;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -11,6 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.validation.Valid;
@@ -20,6 +22,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+import java.util.UUID;
 
 @Controller
 @Log4j2
@@ -55,7 +58,6 @@ public class RegisterController {
             e.printStackTrace();
         }
     }
-
     //FORM VALIDATION
     //GET
     //http://localhost:8080/validation/register
@@ -92,4 +94,48 @@ public class RegisterController {
         }
         return "success";
     }
+
+    // ################################# CRUD #######################################################
+
+    //CREATE READY
+    // http://localhost:8080/create/register
+    @GetMapping("create/register")
+    public String createDataSet(Model model){
+        int counter=1;
+        for (int i = 11; i <= 15; i++) {
+            UUID randomHex=UUID.randomUUID();
+            RegisterEntity entity = RegisterEntity.builder()
+                    .name("adi " + i)
+                    .surname("soyadi " + i)
+                    .email(randomHex.toString())
+                    .password("password" + i)
+                    .build();
+            repository.save(entity);
+            counter++;
+        }
+        model.addAttribute("key_dataset",counter+" tane Register oluştuldu");
+        return "registerList";
+    }
+
+    //LIST
+    //http://localhost:8080/register/list
+    @GetMapping("register/list")
+    public String registerFindById(Model model){
+       Iterable<RegisterEntity>  list= repository.findAll();
+       model.addAttribute("register_list",list);
+       list.forEach((temp)->{
+           System.out.println(temp);
+       });
+        return "registerList";
+    }
+
+    //FIND
+    //http://localhost:8080/register/find
+    //http://localhost:8080/register/find/1
+    @GetMapping({"register/find","register/find/{id}"})
+    public String registerFindById(@PathVariable(name="id",required = false) Long id,Model model){
+        RegisterEntity registerEntity=repository.findById(id).orElseThrow(()-> new ResourceNotFoundException(id+" register id bulunamadı"));
+        return "registerList";
+    }
+
 }

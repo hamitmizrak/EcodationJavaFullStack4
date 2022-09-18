@@ -6,8 +6,17 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.Random;
+
 @Configuration
 public class RegisterDataSet {
+
+    public int randomString(){
+        Random random=new Random();
+        int number=random.nextInt(10000)+1;
+        return number;
+    }
+
 
     //1.YOL(DATA SET
     @Bean
@@ -20,7 +29,7 @@ public class RegisterDataSet {
                             .name("adi " + i)
                             .surname("soyadi " + i)
                             .email("email " + i)
-                            .password("password" + i)
+                            .password("password" + randomString())
                             .build();
                     repository.save(entity);
                 }
@@ -30,7 +39,7 @@ public class RegisterDataSet {
 
     //2.YOL(DATA SET
     //Lambda Expression: Tek metotlu interface için kullanacağız az kod çok iş mantığıdır.
-    @Bean
+/*    @Bean
     CommandLineRunner createRegisterPath2(IRegisterRepository repository) {
         return (args) -> {
             for (int i = 6; i <= 10; i++) {
@@ -43,5 +52,5 @@ public class RegisterDataSet {
                 repository.save(entity);
             }
         };
-    }
+    }*/
 }
