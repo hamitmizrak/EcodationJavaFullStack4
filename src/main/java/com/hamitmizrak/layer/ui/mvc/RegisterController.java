@@ -1,7 +1,11 @@
 package com.hamitmizrak.layer.ui.mvc;
 
+import com.hamitmizrak.layer.bean.ModelMapperBean;
 import com.hamitmizrak.layer.business.dto.RegisterDto;
+import com.hamitmizrak.layer.data.entity.RegisterEntity;
+import com.hamitmizrak.layer.data.repository.IRegisterRepository;
 import lombok.extern.log4j.Log4j2;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -21,9 +25,21 @@ import java.util.Locale;
 @Log4j2
 public class RegisterController {
 
-    //dosya yazmak
+    //Field injection
+
+    //Constructor injection
+    IRegisterRepository repository;
+    ModelMapperBean modelMapperBean;
+    @Autowired
+    public RegisterController(IRegisterRepository repository, ModelMapperBean modelMapperBean) {
+        this.repository = repository;
+        this.modelMapperBean = modelMapperBean;
+    }
+
+    //dosya yazmak Path
     private static final String PATH = "C:\\0_Tutorials\\fileio\\ecodation.txt";
 
+    //Simdiki zaman metodu
     private String nowDate() {
         Locale locale = new Locale("tr", "TR");
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MMMM/yyyy HH:mm:ss", locale);
@@ -59,14 +75,21 @@ public class RegisterController {
             log.error("HATA: " + bindingResult.hasErrors());
             return "register";
         }
-
         //Eğer valdiaiton bir sıkıntı yoksa
         model.addAttribute("register_success", "Üye Kaydı Başarılı" + registerDto);
         log.info("BAŞARILI: " + registerDto);
+
         //File Writer
         writerDataFile(registerDto);
         //database
+        RegisterEntity registerEntity=modelMapperBean.modelMapperMethod().map(registerDto,RegisterEntity.class);
+        try {
+            if(registerEntity!=null){
+                repository.save(registerEntity);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         return "success";
     }
-
 }
