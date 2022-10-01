@@ -8,6 +8,7 @@ import com.hamitmizrak.layer.exception.ResourceNotFoundException;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,6 +27,7 @@ import java.util.UUID;
 
 @Controller
 @Log4j2
+@Transactional
 public class RegisterController {
 
     //Field injection
@@ -58,6 +60,7 @@ public class RegisterController {
             e.printStackTrace();
         }
     }
+
     //FORM VALIDATION
     //GET
     //http://localhost:8080/validation/register
@@ -135,6 +138,8 @@ public class RegisterController {
     @GetMapping({"register/find","register/find/{id}"})
     public String registerFindById(@PathVariable(name="id",required = false) Long id,Model model){
         RegisterEntity registerEntity=repository.findById(id).orElseThrow(()-> new ResourceNotFoundException(id+" register id bulunamadı"));
+
+        hata id kontorl sağla
         return "registerList";
     }
 

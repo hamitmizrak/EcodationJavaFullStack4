@@ -17,7 +17,6 @@ public class RegisterDataSet {
         return number;
     }
 
-
     //1.YOL(DATA SET
     @Bean
     CommandLineRunner createRegisterPath1(IRegisterRepository repository) {
@@ -39,7 +38,7 @@ public class RegisterDataSet {
 
     //2.YOL(DATA SET
     //Lambda Expression: Tek metotlu interface için kullanacağız az kod çok iş mantığıdır.
-/*    @Bean
+    @Bean
     CommandLineRunner createRegisterPath2(IRegisterRepository repository) {
         return (args) -> {
             for (int i = 6; i <= 10; i++) {
@@ -52,5 +51,5 @@ public class RegisterDataSet {
                 repository.save(entity);
             }
         };
-    }*/
+    }
 }
