@@ -8,17 +8,17 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.Random;
 
-@Configuration
+//@Configuration
 public class RegisterDataSet {
 
-    public int randomString(){
+  /*  public int randomString(){
         Random random=new Random();
         int number=random.nextInt(10000)+1;
         return number;
-    }
+    }*/
 
     //1.YOL(DATA SET
-    @Bean
+/*    @Bean
     CommandLineRunner createRegisterPath1(IRegisterRepository repository) {
         return new CommandLineRunner() {
             @Override
@@ -34,7 +34,7 @@ public class RegisterDataSet {
                 }
             }
         };
-    }
+    }*/
 
     //2.YOL(DATA SET
     //Lambda Expression: Tek metotlu interface için kullanacağız az kod çok iş mantığıdır.

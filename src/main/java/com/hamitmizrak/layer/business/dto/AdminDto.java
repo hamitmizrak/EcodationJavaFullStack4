@@ -14,6 +14,6 @@ import java.io.Serializable;
 @Builder
 public class AdminDto implements Serializable {
     private Long id;
-    private String adminName;
-    private String adminSurname;
+    private String name;
+    private String surname;
 }

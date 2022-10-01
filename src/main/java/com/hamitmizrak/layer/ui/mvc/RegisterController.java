@@ -139,7 +139,7 @@ public class RegisterController {
     public String registerFindById(@PathVariable(name="id",required = false) Long id,Model model){
         RegisterEntity registerEntity=repository.findById(id).orElseThrow(()-> new ResourceNotFoundException(id+" register id bulunamadı"));
 
-        hata id kontorl sağla
+
         return "registerList";
     }
 
