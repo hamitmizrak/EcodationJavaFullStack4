@@ -39,11 +39,22 @@
 <body class="container">
 
     <!-- start codes -->
+    <p th:text="${login_key}" class="text-danger"></p>
+
     <a th:href="@{/admin}" class="btn btn-primary">Admin</a>
     <a th:href="@{/logout}" class="btn btn-danger">Logout</a>
 
     <h1 class="text-primary">Login Sayfası</h1>
 
+    <form th:action="@{/login}" th:method="post">
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+
+        <input type="text" class="form-control mb-3" th:name="username" id="username" required placeholder="kullanıcı adınız" autofocus>
+        <input type="password" class="form-control mb-3" th:name="password" id="password" required placeholder="kullanıcı Şifreniz" >
+
+        <button type="reset" class="btn btn-danger">Temizle</button>
+        <button type="submit" class="btn btn-primary">Gönder</button>
+    </form>
 
     <!-- ends codes -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

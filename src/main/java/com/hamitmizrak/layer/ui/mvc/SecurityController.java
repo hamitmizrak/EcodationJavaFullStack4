@@ -41,7 +41,6 @@ public class SecurityController {
         return "admin";
     }
 
-
     // login?error
     // http://localhost:8080/login
     @GetMapping("/login")
@@ -54,7 +53,6 @@ public class SecurityController {
         return "login";
     }
 
-
     // http://localhost:8080/logout
     @GetMapping("/logout")
     public String logout(HttpServletRequest request, HttpServletResponse response,Model model){
@@ -66,6 +64,5 @@ public class SecurityController {
         }
         return "logout";
     }
-
 
 }
