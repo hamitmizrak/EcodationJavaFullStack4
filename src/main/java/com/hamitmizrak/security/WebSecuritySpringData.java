@@ -28,10 +28,18 @@ public class WebSecuritySpringData extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .antMatchers("/public/homepage","index").permitAll()
+                .antMatchers("/public/homepage","/index").permitAll()
+                .antMatchers("/login","/logout").permitAll()
                 .anyRequest()
                 .authenticated()
-                .and().formLogin();
+                .and()
+                .formLogin()
+                .loginPage("/login")
+                .defaultSuccessUrl("/admin")
+                .and()
+                .logout()
+                .logoutSuccessUrl("/logout")
+                .invalidateHttpSession(true).permitAll();
                 //.httpBasic();
                 //.formLogin();
     }

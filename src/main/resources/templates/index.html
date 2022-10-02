@@ -39,9 +39,11 @@
 <body class="container">
 
     <!-- start codes -->
-    <h1 class="text-primary">Thymeleaf1</h1>
-    <p th:text="'Merhabalar Thymeleaf'"></p>
+    <h1 class="text-primary">Anasayfa Hoşgeldiniz</h1>
 
+    <a th:href="@{/login}">Login</a>
+    <a th:href="@{/admin}" class="btn btn-primary">Admin</a>
+    <a th:href="@{/logout}" class="btn btn-danger">Logout</a>
 
     <!-- ends codes -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
