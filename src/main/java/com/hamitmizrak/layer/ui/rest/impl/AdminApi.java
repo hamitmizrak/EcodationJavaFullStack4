@@ -91,15 +91,19 @@ public class AdminApi {
     }
 
     //http://localhost:8080/api/admin/v1/tutorialsapi8
+    //http://localhost:8080/api/admin/v1/tutorialsapi8/0
     //http://localhost:8080/api/admin/v1/tutorialsapi8/44
     @GetMapping({"tutorialsapi8","tutorialsapi8/{id}"})
     public ResponseEntity<AdminDto>  getApi8(@PathVariable(name = "id",required = false) Long adminId){
-        AdminDto adminDto=AdminDto.builder().id(1L).name("adı").surname("soyadı").build();
+        AdminDto adminDto=AdminDto.builder().id(adminId).name("adı").surname("soyadı").build();
         if(adminId==null){
+            //404
             return ResponseEntity.notFound().build();
         }else if(adminId==0){
+            //400
             return ResponseEntity.badRequest().build();
         }
+        //200
         return ResponseEntity.ok(adminDto);
     }
 

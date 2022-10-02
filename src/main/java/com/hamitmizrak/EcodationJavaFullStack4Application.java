@@ -4,13 +4,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 
-@SpringBootApplication(exclude = {
+/*@SpringBootApplication(exclude = {
         SecurityAutoConfiguration.class
         //org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration.class,
         //org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration.class
 }
-)
-/*@SpringBootApplication*/
+)*/
+@SpringBootApplication
 public class EcodationJavaFullStack4Application  {
 
     //PSVM
@@ -19,6 +19,4 @@ public class EcodationJavaFullStack4Application  {
         System.setProperty("java.awt.headless", "false"); //Disables headless
         SpringApplication.run(EcodationJavaFullStack4Application.class, args);
     }
-
-
 }
