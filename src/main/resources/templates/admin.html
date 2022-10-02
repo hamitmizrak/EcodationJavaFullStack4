@@ -41,6 +41,8 @@
     <!-- start codes -->
     <h1 class="text-primary">Sadece Üye olanlar bu sayfayı görebilir.</h1>
 
+   Hoşgeldiniz: <span th:text="${user_key}" class="text-danger"></span>
+
     <a th:href="@{/login}" class="btn btn-warning">Login</a>
     <a th:href="@{/admin}" class="btn btn-primary">Admin</a>
     <a th:href="@{/logout}" class="btn btn-danger">Logout</a>
